@@ -20,7 +20,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npx ng build --configuration production --base-href /progetto-ilmanifesto/
+          npx ng build --configuration production --base-href /ilmani/
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
