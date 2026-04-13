@@ -1,0 +1,60 @@
+.rectangle {
+  background-color: #f6f5f5;
+  padding: 1.25rem;
+  border-radius: 3px;
+  width: 95%;
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+/* Tagline */
+.footer-tagline {
+  color: rgba(85, 85, 85, 0.8);
+  letter-spacing: 1px;
+}
+
+/* Titoli colonne footer */
+.footer-title {
+  color: rgba(85, 85, 85, 0.8);
+}
+
+/* Icone social */
+.social-list i {
+  width: 20px;
+}
+
+/* Link footer */
+footer a.text-secondary {
+  transition: color 0.2s;
+}
+
+footer a:hover,
+.footer-col a:hover,
+.footer-info a:hover,
+.social-list a:hover,
+.copyright-right a:hover{
+  text-decoration: underline !important;
+  text-decoration-color: rgba(85, 85, 85, 0.5) !important;
+  text-decoration-thickness: 2px !important;
+}
+
+/* Bottoni footer */
+footer .btn-danger {
+  background-color: #bd0101 !important;
+  border-color: #bd0101 !important;
+}
+
+footer .btn-danger:hover {
+  background-color: #762c33 !important;
+  border-color: #762c33 !important;
+}
+
+footer .btn-outline-danger {
+  color: #bd0101 !important;
+  border-color: #bd0101 !important;
+}
+
+footer .btn-outline-danger:hover {
+  background-color: #bd0101 !important;
+  color: white !important;
+}

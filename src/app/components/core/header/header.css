@@ -1,0 +1,88 @@
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.header-left {
+  justify-self: start;
+}
+
+.header-center {
+  justify-self: center;
+}
+
+.header-right {
+  justify-self: end;
+  display: flex;
+  gap: 12px;
+}
+
+/* Hamburger */
+.hamburger-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: rgba(85, 85, 85, 1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hamburger-btn span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333230;
+}
+
+.hamburger-btn span:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(85, 85, 85, 0.5);
+  text-decoration-thickness: 2px;
+}
+
+/* Logo */
+.logo-img {
+  transition: height 0.3s ease;
+}
+
+/* Bottoni header */
+.btn-abbonati-top {
+  background-color: #bd0101;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+
+.btn-abbonati-top:hover {
+  background-color: #762c33;
+}
+
+.btn-entra-top {
+  background-color: transparent;
+  border: 1px solid #bd0101;
+  color: #bd0101;
+  padding: 8px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.btn-entra-top:hover {
+  background-color: #bd0101;
+  color: white;
+}
+
+
+.red-line {
+  border-bottom: 6px solid #c12b2b;
+}
+
+.red-line {
+  border-bottom: 6px solid #c12b2b;
+}

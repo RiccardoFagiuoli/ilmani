@@ -1,0 +1,85 @@
+.sidebar-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;              /* nascosta fuori dallo schermo */
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  color: black;
+  z-index: 1001;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar visibile (quando ha classe active) */
+.sidebar-menu.active {
+  left: 0;
+}
+
+/* Overlay scuro dietro la sidebar */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+/* Overlay visibile */
+.overlay.active {
+  display: block;
+}
+
+/* Header della sidebar */
+.sidebar-header {
+  background-color: #f6f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #bd0101;
+}
+
+.close-sidebar {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* Link della sidebar */
+.sidebar-nav {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidebar-nav li {
+  margin-bottom: 15px;
+}
+
+.sidebar-nav li a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.sidebar-nav li a:hover {
+  color: #bd0101;
+}
+
+.sidebar-nav hr {
+  margin: 15px 0;
+  border-color: #333;
+}

@@ -1,0 +1,21 @@
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 35px;
+  justify-content: flex-start;
+}
+
+.nav-link {
+  color: #1a1a1a;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+
+.nav-links .nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(85, 85, 85, 0.5);
+  text-decoration-thickness: 2px;
+  color: #1a1a1a;
+}

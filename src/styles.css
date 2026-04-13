@@ -1,1 +1,269 @@
-/* You can add global styles to this file, and also import other style files */
+/* ============================================ */
+/* UTILITY CLASS PERSONALIZZATE                 */
+/* ============================================ */
+
+.fs-5-5 {
+  font-size: 1.125rem;  /* 18px */
+}
+
+.fs-0-8 {
+  font-size: 0.8rem;
+}
+
+.fs-0-9 {
+  font-size: 0.85rem;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.rounded-0-1 {
+  border-radius: 0.1rem;
+}
+
+.grey-line {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* ============================================ */
+/* LAYOUT DI BASE (CONTAINER, BODY, HTML)       */
+/* ============================================ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+/* ============================================ */
+/* TIPOGRAFIA GENERALE                          */
+/* ============================================ */
+.hero-category,
+.article-category,
+.sidebar-category,
+.card-category {
+  color: #bd0101;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-left: 4px solid #bd0101;
+  padding-left: 12px;
+  margin-bottom: 1.5rem;
+}
+
+/* ============================================ */
+/* MEDIA QUERY - TELEFONI (max 576px)           */
+/* ============================================ */
+
+@media (max-width: 576px) {
+
+  /* Navbar scrollabile */
+  .main-nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .main-nav::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .main-nav::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .main-nav::-webkit-scrollbar-thumb {
+    background: #bd0101;
+    border-radius: 10px;
+  }
+
+  /* Nav links */
+  .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 10px 0;
+    margin: 0;
+    white-space: nowrap;
+    justify-content: center;
+  }
+
+  .nav-links .nav-link {
+    white-space: nowrap;
+    font-size: 0.85rem;
+    padding: 8px 0;
+  }
+
+  /* Top bar */
+  .top-bar .container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .top-left {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .top-link {
+    font-size: 0.7rem;
+  }
+
+  .top-right {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Header */
+  .logo-img {
+    height: 40px !important;
+    width: auto;
+  }
+
+  .hamburger-text {
+    display: none;
+  }
+
+  .btn-abbonati-top,
+  .btn-entra-top {
+    padding: 5px 12px;
+    font-size: 0.7rem;
+  }
+
+  /* Hero */
+  .hero-section h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-category {
+    font-size: 0.6rem;
+  }
+
+  .hero-meta {
+    font-size: 0.65rem;
+  }
+
+  /* Articoli */
+  .article-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .sidebar-item h3 {
+    font-size: 0.9rem;
+  }
+
+  /* Card */
+  .card-title {
+    font-size: 0.9rem !important;
+  }
+
+  /* Subscriptionbox box */
+  .subscription-box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .subscription-box h3 {
+    font-size: 1.3rem;
+  }
+
+  .subscription-box .text {
+    font-size: 0.9rem;
+  }
+
+  .btn-subscription-special {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  /* Footer */
+  .rectangle {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-tagline {
+    font-size: 1rem;
+  }
+
+  .btn-footer-abbonati,
+  .btn-footer-accedi {
+    padding: 8px 16px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .footer-info a,
+  .footer-col a {
+    font-size: 0.8rem;
+  }
+
+  /* Copyright */
+  .copyright-wrapper .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .copyright-left p {
+    margin-left: 0;
+  }
+
+  .copyright-right {
+    justify-content: center;
+  }
+}
+
+/* ============================================ */
+/* MEDIA QUERY - TABLET (577px - 768px)         */
+/* ============================================ */
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .logo-img {
+    height: 50px;
+  }
+
+  .subscription-box {
+    padding: 2rem;
+  }
+}

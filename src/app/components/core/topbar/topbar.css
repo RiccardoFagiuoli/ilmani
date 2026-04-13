@@ -1,0 +1,19 @@
+.top-bar {
+  background-color: #f6f5f5;
+  font-size: 0.85rem;
+}
+
+.top-link {
+  color: #777;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  text-decoration-color: rgba(85, 85, 85, 0.5);
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 1px;
+}
+
+.top-link:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(85, 85, 85, 0.5);
+  text-decoration-thickness: 2px;
+}

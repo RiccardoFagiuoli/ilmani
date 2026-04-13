@@ -1,0 +1,30 @@
+.subscription-box {
+  width: 100%;
+  background-color: #bd0101;
+  padding: 4rem;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.btn-subscription-special {
+  background-color: white;
+  color: #bd0101;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-subscription-special:hover {
+  background-color: #f3f3f3;
+}
+
+.subscription-link {
+  color: white;
+  text-decoration: none;
+}
+
+.subscription-link:hover {
+  color: #f3f3f3;
+}
