@@ -130,6 +130,11 @@ body, button, input, select, textarea {
     display: none  !important;
   }
 
+  .sidebar-mene{
+    left: -200px;
+    width: 200px;
+  }
+
   /* NavBar */
   .main-nav {
     overflow-x: auto;
