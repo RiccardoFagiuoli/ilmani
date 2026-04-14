@@ -71,7 +71,7 @@ body, button, input, select, textarea {
 .card-category {
   color: #bd0101;
   font-size: 0.7rem;
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-transform: uppercase;
   /*letter-spacing: 0.5px;*/
 }
