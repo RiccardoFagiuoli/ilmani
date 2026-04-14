@@ -1,6 +1,9 @@
 /* ============================================ */
 /* UTILITY CLASS PERSONALIZZATE                 */
 /* ============================================ */
+:root {
+  --main-font: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
 
 .fs-5-5 {
   font-size: 1.125rem;  /* 18px */
@@ -44,9 +47,12 @@ html, body {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: #ffffff;
   color: #1a1a1a;
+}
+
+body, button, input, select, textarea {
+  font-family: var(--main-font), sans-serif;
 }
 
 .sticky-header {
@@ -67,7 +73,7 @@ body {
   font-size: 0.7rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  /*letter-spacing: 0.5px;*/
 }
 
 .section-title {
