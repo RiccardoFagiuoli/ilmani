@@ -117,6 +117,10 @@ body, button, input, select, textarea {
     height: auto;
   }
 
+  .hamburger-btn span {
+    display: none;
+  }
+
   .hamburger-btn {
     font-size: 1.2rem;
     padding: 5px;
