@@ -3,25 +3,477 @@
 <!-- Sidebar menu -->
 <div class="sidebar-menu" id="sidebarMenu">
   <div class="sidebar-header">
-    <span class="sidebar-logo">il manifesto</span>
-    <button class="close-sidebar" id="closeSidebar" (click)="closeSidebar()">
+    <span class="sidebar-logo">ilmani</span>
+    <button class="close-sidebar" (click)="closeSidebar()">
       <i class="fas fa-times"></i>
     </button>
   </div>
+
+  <div class="sidebar-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Cerca" class="search-input">
+  </div>
+
+  <!-- Menu principale -->
   <ul class="sidebar-nav">
-    <li><a href="#">Primo piano</a></li>
-    <li><a href="#">Politica</a></li>
-    <li><a href="#">Internazionale</a></li>
-    <li><a href="#">Cultura</a></li>
-    <li><a href="#">Economia</a></li>
-    <li><a href="#">Ambiente</a></li>
-    <li><a href="#">Podcast</a></li>
-    <li><hr></li>
-    <li><a href="#">Edicola</a></li>
-    <li><a href="#">Newsletter</a></li>
-    <li><a href="#">Cerca</a></li>
-    <li><a href="#">Store</a></li>
-    <li><a href="#">Contatti</a></li>
-    <li><a href="#">Aiuto</a></li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Commenti e rubriche<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Editoriali</a></li>
+        <li><a href="#">Commenti</a></li>
+        <li><a href="#">Rubriche</a></li>
+        <li><a href="#">Lettere</a></li>
+        <li><a href="#">Appelli</a></li>
+        <li class="has-submenu-level2">
+          <a href="#">ilmani</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Tizio Uno</a></li>
+            <li><a href="#">Tizio Due</a></li>
+            <li><a href="#">Tizio Tre</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Politica <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="#">Politica</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">25 aprile</a></li>
+            <li><a href="#">Bilancio</a></li>
+            <li><a href="#">Giustizia</a></li>
+            <li><a href="#">Tizio Quattro</a></li>
+            <li><a href="#">Riforme</a></li>
+            <li><a href="#">Referendum</a></li>
+            <li><a href="#">25 aprile</a></li>
+            <li><a href="#">Bilancio</a></li>
+            <li><a href="#">Regionali</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="#">Sinistra</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Anni 60</a></li>
+            <li><a href="#">Anni 70</a></li>
+            <li><a href="#">Pci</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="#">Diritti</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Carcere</a></li>
+            <li><a href="#">Droghe</a></li>
+            <li><a href="#">Eutanasia</a></li>
+            <li><a href="#">Salute</a></li>
+            <li><a href="#">Unioni civili</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Femminismi</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Italia <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="#">Italia</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Immigrazione</a></li>
+            <li><a href="#">Terremoto</a></li>
+            <li><a href="#">Violenza maschile</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="#">Chiesa</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Vaticano</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Città <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="#">Città</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Bologna</a></li>
+            <li><a href="#">Firenze</a></li>
+            <li><a href="#">Genova</a></li>
+            <li><a href="#">Milano</a></li>
+            <li><a href="#">Napoli</a></li>
+            <li><a href="#">Roma</a></li>
+            <li><a href="#">Sardegna</a></li>
+            <li><a href="#">Sicilia</a></li>
+            <li><a href="#">Torino</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Lavoro e economia <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Economia</a></li>
+        <li class="has-submenu-level2">
+          <a href="#">Lavoro</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Aiuto e dintorni</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Scuola, università e ricerca <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Scuola e università</a></li>
+        <li><a href="#">Scienza</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Ambiente <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="#">Ambiente</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Acqua</a></li>
+            <li><a href="#">Agricoltura</a></li>
+            <li><a href="#">Cibo</a></li>
+            <li><a href="#">Clima</a></li>
+            <li><a href="#">Energia</a></li>
+            <li><a href="#">Grandi Opere</a></li>
+            <li><a href="#">Turismo</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Europa <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="#">Europa</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Austra</a></li>
+            <li><a href="#">Balcani</a></li>
+            <li><a href="#">Francia</a></li>
+            <li><a href="#">Germania</a></li>
+            <li><a href="#">Gran Bretagna</a></li>
+            <li><a href="#">Grecia</a></li>
+            <li><a href="#">Olanda</a></li>
+            <li><a href="#">Polonia</a></li>
+            <li><a href="#">Portogallo</a></li>
+            <li><a href="#">Russia</a></li>
+            <li><a href="#">Spagna</a></li>
+            <li><a href="#">Turchia</a></li>
+            <li><a href="#">Ucraina</a></li>
+            <li><a href="#">Ungheria</a></li>
+            <li><a href="#">Ue</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Esteri <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Internazionali</a></li>
+        <li class="has-submenu-level2">
+          <a href="#">Usa</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Elettorale americana</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="#">Africa</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Algeria</a></li>
+            <li><a href="#">Egitto</a></li>
+            <li><a href="#">Libia</a></li>
+            <li><a href="#">Saharawi</a></li>
+            <li><a href="#">Sudan</a></li>
+            <li><a href="#">Tunisia</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="#">America latina</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Argentina</a></li>
+            <li><a href="#">Brasile</a></li>
+            <li><a href="#">Cuba</a></li>
+            <li><a href="#">Venezuela</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="#">Asia</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Afghanistan</a></li>
+            <li><a href="#">Cina</a></li>
+            <li><a href="#">Coree</a></li>
+            <li><a href="#">India</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="#">Medio Oriente</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Iran</a></li>
+            <li><a href="#">Iraq</a></li>
+            <li><a href="#">Israele</a></li>
+            <li><a href="#">Kurdi</a></li>
+            <li><a href="#">Libano</a></li>
+            <li><a href="#">Palestina</a></li>
+            <li><a href="#">Siria</a></li>
+            <li><a href="#">Yemen</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Tecnologie <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Intelligenza artificiale</a></li>
+        <li><a href="#">Social</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Cultura <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="#">Cultura</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Alt Arte Lavoro Tempo</a></li>
+            <li><a href="#">Archeologia</a></li>
+            <li><a href="#">Architettura</a></li>
+            <li><a href="#">Giorno della Memoria</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="#">Biennale</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Biennale archiettura</a></li>
+            <li><a href="#">Biennale arte</a></li>
+            <li><a href="#">Biennale Cinema</a></li>
+            <li><a href="#">Biennale Danza</a></li>
+            <li><a href="#">Biennale Musica</a></li>
+            <li><a href="#">Biennale Teatro</a></li>
+          </ul>
+        </li>
+          <li><a href="#">Festivaletteratura Mantova</a></li>
+          <li><a href="#">Più libri, più liberi</a></li>
+          <li><a href="#">Salone del libro</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Visioni<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="#">Visioni</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Berlinale</a></li>
+            <li><a href="#">Cannes</a></li>
+            <li><a href="#">Cinema</a></li>
+            <li><a href="#">Locarno</a></li>
+            <li><a href="#">Oscar</a></li>
+            <li><a href="#">Sanremo</a></li>
+            <li><a href="#">venezia Cinema</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Recensioni<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="#">Libri</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">Fantascienza</a></li>
+            <li><a href="#">Noir</a></li>
+            <li><a href="#">Poesia</a></li>
+            <li><a href="#">Dante</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Film</a></li>
+        <li><a href="#">Mostre</a></li>
+        <li><a href="#">Musica</a></li>
+        <li><a href="#">Serie Tv</a></li>
+        <li><a href="#">Teatro e danza</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Inchieste <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Inchieste</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Storie<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Storie</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Interviste<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Interviste</a></li>
+      </ul>
+    </li>
+
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Reportage<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Reportage</a></li>
+      </ul>
+    </li>
+
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Sport<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="#">Sport</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">in moviment</a></li>
+            <li><a href="#">Olimpiadi</a></li>
+            <li><a href="#">Rugby</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Inserti <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Alias</a></li>
+        <li><a href="#">Alias Domenica</a></li>
+        <li><a href="#">ExtraTerrestre</a></li>
+        <li><a href="#">Le Monde diplomatique</a></li>
+        <li><a href="#">1945-2025</a></li>
+        <li><a href="#">Pecore elettriche</a></li>
+        <li><a href="#">Questa è Gaza</a></li>
+        <li><a href="#">Tremenda vendetta</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Podcast <i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">I podcast del mani</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Immagini<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Retina</a></li>
+        <li><a href="#">Fotoreportage</a></li>
+        <li><a href="#">Fotofinish</a></li>
+        <li class="has-submenu-level2">
+          <a href="#">Fumetti</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#">hurricane</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Vignette<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Vignette</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Prime Pagine<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Prime Pagine</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">ilmani tv<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Eventi</a></li>
+      </ul>
+    </li>
+
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="#">Pagine speciali<i class="fas fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Archivio</a></li>
+        <li><a href="#">Buon compleanno mani!</a></li>
+        <li><a href="#">MeMa</a></li>
+        <li><a href="#">Lab</a></li>
+        <li><a href="#">25 aprile</a></li>
+        <li><a href="#">Addio</a></li>
+        <li><a href="#">io rompo</a></li>
+      </ul>
+    </li>
   </ul>
+
+<div class="sidebar-datetime">
+  <span>{{currentDate}}</span>
+  <span class="text-secondary mx-1">—</span>
+  <span>{{currentUpdate}}</span>
+</div>
+
+<div class="sidebar-links">
+  <a href="#" class="sidebar-link">Abbonamenti</a>
+  <a href="#" class="sidebar-link">Ultime edizioni</a>
+</div>
+
+<div class="sidebar-info-title">Info utili</div>
+
+<ul class="sidebar-info-list">
+  <li><a href="#">Aiuto</a></li>
+  <li><a href="#">Newsletter</a></li>
+  <li><a href="#">Tariffe</a></li>
+  <li><a href="#">Abbonamenti</a></li>
+  <li><a href="#">Regala un abbonamento</a></li>
+  <li><a href="#">La membership</a></li>
+  <li><a href="#">Cosa puoi fare</a></li>
+  <li><a href="#">Store</a></li>
+  <li><a href="#">Termini e condizioni</a></li>
+  <li><a href="#">Privacy</a></li>
+  <li><a href="#">Cookie</a></li>
+</ul>
 </div>

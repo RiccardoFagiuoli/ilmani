@@ -1,8 +1,12 @@
+/* ============================================ */
+/* SIDEBAR MENU - BASE                         */
+/* ============================================ */
+
 .sidebar-menu {
   position: fixed;
   top: 0;
-  left: -300px;              /* nascosta fuori dallo schermo */
-  width: 300px;
+  left: -400px;
+  width: 400px;
   height: 100%;
   background-color: white;
   color: black;
@@ -12,12 +16,10 @@
   font-family: Arial, sans-serif;
 }
 
-/* Sidebar visibile (quando ha classe active) */
 .sidebar-menu.active {
   left: 0;
 }
 
-/* Overlay scuro dietro la sidebar */
 .overlay {
   position: fixed;
   top: 0;
@@ -29,12 +31,14 @@
   display: none;
 }
 
-/* Overlay visibile */
 .overlay.active {
   display: block;
 }
 
-/* Header della sidebar */
+/* ============================================ */
+/* HEADER SIDEBAR                              */
+/* ============================================ */
+
 .sidebar-header {
   background-color: #f6f5f5;
   display: flex;
@@ -58,28 +62,252 @@
   cursor: pointer;
 }
 
-/* Link della sidebar */
+.close-sidebar:hover {
+  color: #bd0101;
+}
+
+/* ============================================ */
+/* CAMPO DI RICERCA                            */
+/* ============================================ */
+
+.sidebar-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-search i {
+  color: #999;
+  font-size: 1rem;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.search-input::placeholder {
+  color: #bbb;
+}
+
+/* ============================================ */
+/* MENU NAVIGAZIONE PRINCIPALE                 */
+/* ============================================ */
+
 .sidebar-nav {
   list-style: none;
-  padding: 20px;
+  padding: 0px;
 }
 
-.sidebar-nav li {
-  margin-bottom: 15px;
+.has-submenu {
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+  box-shadow: inset 0 -1px 0 0 #e0e0e0;  /* bordo lungo */
+  margin-bottom: 5px;
 }
 
-.sidebar-nav li a {
+
+.has-submenu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.has-submenu a i {
+  font-size: 1.2rem;
+  color: #bd0101;
+  padding: 4px;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+  background-color: rgba(85, 85, 85, 0.06);
+}
+
+.has-submenu a i:hover {
+  border-radius: 4px;
+  background-color: rgba(85, 85, 85, 0.3);
+}
+
+.has-submenu.open a i {
+  background-color: rgba(85, 85, 85, 0.3);
+}
+
+.has-submenu ul{
+  background-color: rgba(85, 85, 85, 0.1);
+  margin: 0;
+}
+
+.sidebar-nav li a:not(.has-submenu a) {
   color: black;
   text-decoration: none;
   font-size: 0.9rem;
   text-transform: uppercase;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
 }
 
-.sidebar-nav li a:hover {
-  color: #bd0101;
+/* ============================================ */
+/* SOTTOMENU DI PRIMO LIVELLO                  */
+/* ============================================ */
+
+.submenu {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: none;
 }
+
+.submenu li {
+  margin-bottom: 8px;
+}
+
+.submenu ul{
+  background-color: transparent;
+}
+.submenu li a {
+  font-size: 1rem;
+  font-weight: normal;
+  color: black;
+  text-transform: none;
+  display: block;
+  padding: 6px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* ============================================ */
+/* SOTTOMENU DI SECONDO LIVELLO - SEMPRE VISIBILE */
+/* ============================================ */
+
+.has-submenu-level2 {
+  cursor: default;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.has-submenu-level2 a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.has-submenu-level2 a i {
+  display: none;
+}
+
+.submenu-level2 {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block !important;
+}
+
+.submenu-level2 li {
+  margin-bottom: 8px;
+}
+
+.submenu-level2 li a {
+  display: block;
+  padding: 6px 12px;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* ============================================ */
+/* DIVIDER                                     */
+/* ============================================ */
 
 .sidebar-nav hr {
   margin: 15px 0;
-  border-color: #333;
+  border-color: #e0e0e0;
+}
+
+/* ============================================ */
+/* SEZIONI AGGIUNTIVE SOTTO IL MENU            */
+/* ============================================ */
+
+/* Data e ora */
+.sidebar-datetime {
+  display: flex;
+  gap: 5px;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  color: rgba(85, 85, 85, 0.8);
+  border-top: 1px solid #e0e0e0;
+  margin-top: 20px;
+}
+
+/* Link Abbonamenti e Ultime edizioni */
+.sidebar-links {
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+/* Separatore */
+.sidebar-divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 15px 20px;
+}
+
+/* Titolo Info utili */
+.sidebar-info-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(85, 85, 85, 0.8);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Lista Info utili */
+.sidebar-info-list {
+  list-style: none;
+  padding: 0 20px 20px 20px;
+  margin: 0;
+}
+
+.sidebar-info-list li {
+  margin-bottom: 10px;
+}
+
+.sidebar-info-list li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  padding: 4px 0;
+  transition: color 0.2s;
 }
