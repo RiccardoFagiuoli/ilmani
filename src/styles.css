@@ -89,67 +89,9 @@ body, button, input, select, textarea {
 /* ============================================ */
 
 @media (max-width: 576px) {
-
-  /* Navbar scrollabile */
-  .main-nav {
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-  }
-
-  .main-nav::-webkit-scrollbar {
-    height: 4px;
-  }
-
-  .main-nav::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-  }
-
-  .main-nav::-webkit-scrollbar-thumb {
-    background: #bd0101;
-    border-radius: 10px;
-  }
-
-  /* Nav links */
-  .nav-links {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-    padding: 10px 0;
-    margin: 0;
-    white-space: nowrap;
-    justify-content: center;
-  }
-
-  .nav-links .nav-link {
-    white-space: nowrap;
-    font-size: 0.85rem;
-    padding: 8px 0;
-  }
-
   /* Top bar */
-  .top-bar .container {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .top-left {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .top-link {
-    font-size: 0.7rem;
-  }
-
-  .top-right {
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
+  app-topbar{
+    display: none !important;
   }
 
   /* Header */
@@ -161,7 +103,7 @@ body, button, input, select, textarea {
   }
 
   .header-left {
-    order: 1;  /* hamburger a sinistra */
+    order: 1;
   }
 
   .header-center {
@@ -170,21 +112,9 @@ body, button, input, select, textarea {
     text-align: center;
   }
 
-  .header-right {
-    order: 3;
-    display: flex;
-    gap: 8px;
-  }
-
   .logo-img {
     max-width: 120px;
     height: auto;
-  }
-
-  .btn-abbonati-top,
-  .btn-entra-top {
-    padding: 4px 10px;
-    font-size: 0.7rem;
   }
 
   .hamburger-btn {
@@ -193,7 +123,60 @@ body, button, input, select, textarea {
   }
 
   .header-right {
-    display: none;
+    display: none  !important;
+  }
+
+  /* NavBar */
+  .main-nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    display: block;
+  }
+
+  /* Scrollbar - Webkit (Chrome, Safari, Edge) */
+  .main-nav::-webkit-scrollbar {
+    height: 4px;
+    background: transparent;
+  }
+  .main-nav::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .main-nav::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0;
+  }
+  .main-nav:hover::-webkit-scrollbar-thumb {
+    background: rgba(85, 85, 85, 0.3);
+  }
+
+  /* Scrollbar - Firefox */
+  .main-nav {
+    scrollbar-color: transparent transparent;
+  }
+  .main-nav:hover {
+    scrollbar-color: rgba(85, 85, 85, 0.3) transparent;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: flex-start;
+    width: max-content;
+  }
+
+  .nav-link {
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .main-nav .container {
+    max-width: 100%;
+    padding: 0 10px;
+    overflow-x: visible;
   }
 
   /* Hero */
@@ -284,20 +267,19 @@ body, button, input, select, textarea {
 /* ============================================ */
 
 @media (min-width: 577px) and (max-width: 768px) {
+  /*topBar*/
+  app-topbar{
+    display: none !important;
+  }
+
   /*header*/
   .header-content {
     gap: 15px;
   }
 
   .logo-img {
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
-  }
-
-  .btn-abbonati-top,
-  .btn-entra-top {
-    padding: 6px 14px;
-    font-size: 0.8rem;
   }
 
   .hamburger-btn span {
@@ -309,17 +291,68 @@ body, button, input, select, textarea {
   }
 
   .header-right {
-    display: none;
+    display: none !important;
   }
 
+  /*navBar*/
+  .main-nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    display: block;
+  }
+
+  /* Scrollbar - Webkit (Chrome, Safari, Edge) */
+  .main-nav::-webkit-scrollbar {
+    height: 4px;
+    background: transparent;
+  }
+  .main-nav::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .main-nav::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0;
+  }
+  .main-nav:hover::-webkit-scrollbar-thumb {
+    background: rgba(85, 85, 85, 0.3);
+  }
+
+  /* Scrollbar - Firefox */
+  .main-nav {
+    scrollbar-color: transparent transparent;
+  }
+  .main-nav:hover {
+    scrollbar-color: rgba(85, 85, 85, 0.3) transparent;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: flex-start;
+    width: max-content;
+  }
+
+  .nav-link {
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .main-nav .container {
+    max-width: 100%;
+    padding: 0 10px;
+    overflow-x: visible;
+  }
+
+  /*hero*/
   .hero-section h1 {
     font-size: 1.8rem;
   }
 
-  .nav-links {
-    gap: 20px;
-  }
-
+  /*subscription-box*/
   .subscription-box {
     padding: 2rem;
   }
