@@ -37,35 +37,8 @@
 /* ============================================ */
 /* BOTTONI SIDEBAR                              */
 /* ============================================ */
-.btn-abbonati-sidebar {
-  background-color: #bd0101;
-  color: white;
-  border: none;
-  padding: 8px 20px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 2px;
-  transition: background-color 0.3s;
-}
-
-.btn-abbonati-sidebar:hover {
-  background-color: #762c33;
-}
-
-.btn-entra-sidebar {
-  background-color: transparent;
-  border: 1px solid #bd0101;
-  color: #bd0101;
-  padding: 8px 20px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 2px;
-  transition: all 0.3s;
-}
-
-.btn-entra-sidebar:hover {
-  background-color: #bd0101;
-  color: white;
+.sidebar-buttons{
+  display: none;
 }
 
 /* ============================================ */
