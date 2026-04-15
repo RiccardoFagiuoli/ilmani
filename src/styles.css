@@ -132,8 +132,8 @@ body, button, input, select, textarea {
 
   /* Sidebar */
   .sidebar-menu {
-    width: 280px;  /* invece di 300px */
-    left: -280px;
+    width: 280px !important;
+    left: -280px !important;
   }
 
   /* Header più compatto */
@@ -156,21 +156,21 @@ body, button, input, select, textarea {
 
   /* Data e ora */
   .sidebar-datetime {
-    display: flex;
-    gap: 5px;
-    padding: 12px 15px;
-    font-size: 0.65rem;
-    color: rgba(85, 85, 85, 0.8);
-    border-top: 1px solid #e0e0e0;
-    margin-top: 20px;
+    display: flex !important;
+    gap: 5px !important;
+    padding: 12px 15px !important;
+    font-size: 0.65rem !important;
+    color: rgba(85, 85, 85, 0.8) !important;
+    border-top: 1px solid #e0e0e0 !important;
+    margin-top: 20px !important;
   }
 
   /* Link Abbonamenti e Ultime edizioni */
   .sidebar-links {
-    display: flex;
-    gap: 12px;
-    padding: 8px 15px;
-    border-bottom: 1px solid #e0e0e0;
+    display: flex !important;
+    gap: 12px !important;
+    padding: 8px 15px !important;
+    border-bottom: 1px solid #e0e0e0 !important;
   }
 
   /* Menu principale */
@@ -384,8 +384,8 @@ body, button, input, select, textarea {
 
   /* sidebar */
   .sidebar-menu {
-    width: 280px;  /* invece di 300px */
-    left: -280px;
+    width: 300px !important;
+    left: -300px !important;
   }
 
   /* Header più compatto */
@@ -408,21 +408,21 @@ body, button, input, select, textarea {
 
   /* Data e ora */
   .sidebar-datetime {
-    display: flex;
-    gap: 5px;
-    padding: 15px 20px;
-    font-size: 0.9rem;
-    color: rgba(85, 85, 85, 0.8);
-    border-top: 1px solid #e0e0e0;
-    margin-top: 20px;
+    display: flex !important;
+    gap: 5px !important;
+    padding: 15px 20px !important;
+    font-size: 0.9rem !important;
+    color: rgba(85, 85, 85, 0.8) !important;
+    border-top: 1px solid #e0e0e0 !important;
+    margin-top: 20px !important;
   }
 
   /* Link Abbonamenti e Ultime edizioni */
   .sidebar-links {
-    display: flex;
-    gap: 15px;
-    padding: 10px 20px;
-    border-bottom: 1px solid #e0e0e0;
+    display: flex !important;
+    gap: 15px !important;
+    padding: 10px 20px !important;
+    border-bottom: 1px solid #e0e0e0 !important;
   }
 
   /* Menu principale */
