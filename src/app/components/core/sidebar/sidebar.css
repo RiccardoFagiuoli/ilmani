@@ -332,6 +332,10 @@
     left: -100% !important;
   }
 
+  .sidbar-menu.active{
+    left: 0 !important;
+  }
+
   /* Header più compatto */
   .sidebar-header {
     padding: 15px;
