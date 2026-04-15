@@ -19,3 +19,118 @@
   text-decoration-thickness: 2px;
   color: #1a1a1a;
 }
+
+/* ============================================ */
+/* MEDIA QUERY - TELEFONI (max 576px)           */
+/* ============================================ */
+
+@media (max-width: 576px) {
+  .main-nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    display: block;
+  }
+
+  /* Scrollbar - Webkit (Chrome, Safari, Edge) */
+  .main-nav::-webkit-scrollbar {
+    height: 4px;
+    background: transparent;
+  }
+  .main-nav::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .main-nav::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0;
+  }
+  .main-nav:hover::-webkit-scrollbar-thumb {
+    background: rgba(85, 85, 85, 0.3);
+  }
+
+  /* Scrollbar - Firefox */
+  .main-nav {
+    scrollbar-color: transparent transparent;
+  }
+  .main-nav:hover {
+    scrollbar-color: rgba(85, 85, 85, 0.3) transparent;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: flex-start;
+    width: max-content;
+  }
+
+  .nav-link {
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .main-nav .container {
+    max-width: 100%;
+    padding: 0 10px;
+    overflow-x: visible;
+  }
+}
+
+/* ============================================ */
+/* MEDIA QUERY - TABLET (577px - 768px)         */
+/* ============================================ */
+@media (min-width: 577px) and (max-width: 768px) {
+  .main-nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    display: block;
+  }
+
+  /* Scrollbar - Webkit (Chrome, Safari, Edge) */
+  .main-nav::-webkit-scrollbar {
+    height: 4px;
+    background: transparent;
+  }
+  .main-nav::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .main-nav::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0;
+  }
+  .main-nav:hover::-webkit-scrollbar-thumb {
+    background: rgba(85, 85, 85, 0.3);
+  }
+
+  /* Scrollbar - Firefox */
+  .main-nav {
+    scrollbar-color: transparent transparent;
+  }
+  .main-nav:hover {
+    scrollbar-color: rgba(85, 85, 85, 0.3) transparent;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: flex-start;
+    width: max-content;
+  }
+
+  .nav-link {
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .main-nav .container {
+    max-width: 100%;
+    padding: 0 10px;
+    overflow-x: visible;
+  }
+}

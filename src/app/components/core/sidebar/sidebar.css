@@ -321,3 +321,267 @@
   padding: 4px 0;
   transition: color 0.2s;
 }
+
+/* ============================================ */
+/* MEDIA QUERY - TELEFONI (max 576px)           */
+/* ============================================ */
+
+@media (max-width: 576px) {
+  .sidebar-menu {
+    width: 100% !important;
+    left: -100% !important;
+  }
+
+  /* Header più compatto */
+  .sidebar-header {
+    padding: 15px;
+  }
+
+  .sidebar-logo {
+    font-size: 1rem;
+  }
+
+  .close-sidebar {
+    font-size: 1.2rem;
+  }
+
+  /*bottoni*/
+  .sidebar-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .btn-abbonati-sidebar {
+    background-color: #bd0101;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-abbonati-sidebar:hover {
+    background-color: #762c33;
+  }
+
+  .btn-entra-sidebar {
+    background-color: transparent;
+    border: 1px solid #bd0101;
+    color: #bd0101;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-entra-sidebar:hover {
+    background-color: #bd0101;
+    color: white;
+  }
+
+  /* Data e ora */
+  .sidebar-datetime {
+    display: flex !important;
+    gap: 3px !important;
+    padding: 12px 15px !important;
+    font-size: 0.5rem !important;
+    color: rgba(85, 85, 85, 0.8) !important;
+    border-top: 1px solid #e0e0e0 !important;
+    margin-top: 20px !important;
+  }
+
+  /* Link Abbonamenti e Ultime edizioni */
+  .sidebar-links {
+    display: flex !important;
+    gap: 12px !important;
+    padding: 8px 15px !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+
+  .sidebar-search-container {
+    padding: 12px;
+  }
+
+  .sidebar-menu.active {
+    left: 0 !important;
+  }
+
+  .sidebar-menu.active * {
+    visibility: visible !important;
+  }
+  /* Menu principale */
+  .sidebar-nav {
+    padding: 15px;
+  }
+
+  .has-submenu a {
+    padding: 6px 10px;
+  }
+
+  /* Sottomenu */
+  .submenu {
+    padding-left: 15px;
+  }
+
+  .submenu li a {
+    padding: 4px 10px;
+  }
+
+  /* Info utili */
+  .sidebar-info-title {
+    padding: 8px 15px;
+  }
+
+  .sidebar-info-list {
+    padding: 0 15px 15px 15px;
+  }
+
+  .sidebar-info-list li a {
+    padding: 3px 0;
+  }
+
+  /* Separatore e divisori */
+  .sidebar-divider {
+    margin: 10px 15px;
+  }
+}
+
+/* ============================================ */
+/* MEDIA QUERY - TABLET (577px - 768px)         */
+/* ============================================ */
+@media (min-width: 577px) and (max-width: 768px) {
+  .sidebar-menu {
+    width: 380px !important;
+    left: -380px !important;
+  }
+
+  .sidebar-menu.active {
+    left: 0 !important;
+  }
+
+  /* Header più compatto */
+  .sidebar-header {
+    padding: 15px;
+  }
+
+  .sidebar-logo {
+    font-size: 1rem;
+  }
+
+  .close-sidebar {
+    font-size: 1.2rem;
+  }
+
+  /*bottoni*/
+  .sidebar-buttons {
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 12px;
+    padding: 25px 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .btn-abbonati-sidebar {
+    background-color: #bd0101;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-abbonati-sidebar:hover {
+    background-color: #762c33;
+  }
+
+  .btn-entra-sidebar {
+    background-color: transparent;
+    border: 1px solid #bd0101;
+    color: #bd0101;
+    padding: 6px 16px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-entra-sidebar:hover {
+    background-color: #bd0101;
+    color: white;
+  }
+
+  /* Data e ora */
+  .sidebar-datetime {
+    display: flex !important;
+    gap: 5px !important;
+    padding: 15px 20px !important;
+    font-size: 0.8rem !important;
+    color: rgba(85, 85, 85, 0.8) !important;
+    border-top: 1px solid #e0e0e0 !important;
+    margin-top: 20px !important;
+  }
+
+  /* Link Abbonamenti e Ultime edizioni */
+  .sidebar-links {
+    display: flex !important;
+    gap: 15px !important;
+    padding: 10px 20px !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+  .sidebar-menu.active {
+    left: 0 !important;
+  }
+
+  .sidebar-menu.active * {
+    visibility: visible !important;
+  }
+
+  /* Menu principale */
+  .sidebar-nav {
+    padding: 15px;
+  }
+
+  .has-submenu a {
+    padding: 6px 10px;
+  }
+
+  /* Sottomenu */
+  .submenu {
+    padding-left: 15px;
+  }
+
+  .submenu li a {
+    padding: 4px 10px;
+  }
+
+  /* Info utili */
+  .sidebar-info-title {
+    padding: 8px 15px;
+  }
+
+  .sidebar-info-list {
+    padding: 0 15px 15px 15px;
+  }
+
+  .sidebar-info-list li a {
+    padding: 3px 0;
+  }
+
+  /* Separatore e divisori */
+  .sidebar-divider {
+    margin: 10px 15px;
+  }
+}

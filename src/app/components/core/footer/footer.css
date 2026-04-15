@@ -58,3 +58,115 @@ footer .btn-outline-danger:hover {
   background-color: #bd0101 !important;
   color: white !important;
 }
+
+/* ============================================ */
+/* MEDIA QUERY - TELEFONI (max 576px)           */
+/* ============================================ */
+
+@media (max-width: 576px) {
+  .rectangle {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-tagline {
+    font-size: 1rem;
+  }
+
+  .btn-footer-abbonati,
+  .btn-footer-accedi {
+    padding: 8px 16px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .footer-info a,
+  .footer-col a {
+    font-size: 0.8rem;
+  }
+}
+
+/* ============================================ */
+/* MEDIA QUERY - TABLET (577px - 768px)         */
+/* ============================================ */
+@media (min-width: 577px) and (max-width: 768px) {
+  .rectangle {
+    width: 40%;
+    margin-left: 0;
+  }
+
+  .footer-title{
+    font-size: 0.8rem;
+  }
+
+  .footer-right a{
+    font-size: 0.8rem;
+  }
+
+  /* Contenitore principale a 2 colonne */
+  .footer-right > .row {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* WRAPPER della prima colonna (NOTIZIE + INSERTI) */
+  .footer-col-notizie-wrapper {
+    grid-row:1;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 30px !important;
+  }
+  .footer-col-notizie {
+    grid-row: 1 !important;
+    grid-column: 1 !important;
+  }
+  .footer-col-inserti{
+    grid-row: 1 !important;
+    grid-column: 2 !important;
+    margin-top: 0 !important;
+  }
+
+  /* WRAPPER della seconda colonna (IL MANI + QUOTIDIANO + SOCIAL) */
+  .footer-col-mani-wrapper {
+    grid-row: 2 !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .footer-col-ilmani{
+    grid-row: 1 !important;
+    grid-column: 1 !important;
+  }
+
+  .footer-col-quotidiano{
+    grid-row: 2 !important;
+    grid-column: 1 !important;
+    margin-top: auto !important;
+  }
+
+  .footer-col-social{
+    grid-row: 1 !important;
+    grid-column: 2 !important;
+    margin-top: auto !important;
+  }
+  /* TERZA COLONNA (IL COLLETTIVO) - larghezza piena */
+  .footer-col-collettivo {
+    grid-row: 3 !important;
+    grid-column: 1 / 3 !important;
+    margin-top: 20px !important;
+  }
+
+  /* ========== BORDI ========== */
+
+  /* BORDO tra RIGA 1 e RIGA 2 */
+  .footer-col-notizie-wrapper,
+  .footer-col-mani-wrapper {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  /* BORDO tra RIGA 2 e RIGA 3 */
+  .footer-col-collettivo {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 30px;
+  }
+}
