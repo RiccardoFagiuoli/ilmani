@@ -157,9 +157,9 @@ body, button, input, select, textarea {
   /* Data e ora */
   .sidebar-datetime {
     display: flex !important;
-    gap: 5px !important;
+    gap: 3px !important;
     padding: 12px 15px !important;
-    font-size: 0.65rem !important;
+    font-size: 0.5rem !important;
     color: rgba(85, 85, 85, 0.8) !important;
     border-top: 1px solid #e0e0e0 !important;
     margin-top: 20px !important;
@@ -173,6 +173,13 @@ body, button, input, select, textarea {
     border-bottom: 1px solid #e0e0e0 !important;
   }
 
+  .sidebar-menu.active {
+    left: 0 !important;
+  }
+
+  .sidebar-menu.active * {
+    visibility: visible !important;
+  }
   /* Menu principale */
   .sidebar-nav {
     padding: 15px;
@@ -388,6 +395,10 @@ body, button, input, select, textarea {
     left: -300px !important;
   }
 
+  .sidebar-menu.active {
+    left: 0 !important;
+  }
+
   /* Header più compatto */
   .sidebar-header {
     padding: 15px;
@@ -411,7 +422,7 @@ body, button, input, select, textarea {
     display: flex !important;
     gap: 5px !important;
     padding: 15px 20px !important;
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important;
     color: rgba(85, 85, 85, 0.8) !important;
     border-top: 1px solid #e0e0e0 !important;
     margin-top: 20px !important;
@@ -423,6 +434,13 @@ body, button, input, select, textarea {
     gap: 15px !important;
     padding: 10px 20px !important;
     border-bottom: 1px solid #e0e0e0 !important;
+  }
+  .sidebar-menu.active {
+    left: 0 !important;
+  }
+
+  .sidebar-menu.active * {
+    visibility: visible !important;
   }
 
   /* Menu principale */
