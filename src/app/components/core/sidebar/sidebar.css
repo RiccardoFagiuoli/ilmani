@@ -54,10 +54,19 @@
   border-bottom: 1px solid #e0e0e0;
 }
 
-.sidebar-logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #bd0101;
+.sidebar-logo{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .close-sidebar {
