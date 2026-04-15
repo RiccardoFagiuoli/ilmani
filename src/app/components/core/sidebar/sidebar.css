@@ -50,21 +50,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   border-bottom: 1px solid #e0e0e0;
+  height: 70px;
+  position: relative;
 }
 
 .sidebar-logo{
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .sidebar-logo img {
-  width: 100%;
   height: 100%;
+  width: auto;
   object-fit: cover;
   border-radius: 4px;
 }
@@ -75,6 +76,10 @@
   color: black;
   font-size: 1.4rem;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 
 .close-sidebar:hover {
