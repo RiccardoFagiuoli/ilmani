@@ -130,8 +130,7 @@ body, button, input, select, textarea {
     display: none  !important;
   }
 
-  /*sidebar*/
-  /* Sidebar più stretta */
+  /* Sidebar */
   .sidebar-menu {
     width: 280px;  /* invece di 300px */
     left: -280px;
@@ -204,6 +203,7 @@ body, button, input, select, textarea {
   .sidebar-divider {
     margin: 10px 15px;
   }
+
 
   /* NavBar */
   .main-nav {
@@ -373,10 +373,78 @@ body, button, input, select, textarea {
     display: none !important;
   }
 
-  /*sidebar*/
+  /* sidebar */
   .sidebar-menu {
-    width: 320px;
-    left: -320px;
+    width: 280px;  /* invece di 300px */
+    left: -280px;
+  }
+
+  /* Header più compatto */
+  .sidebar-header {
+    padding: 15px;
+  }
+
+  .sidebar-logo {
+    font-size: 1rem;
+  }
+
+  .close-sidebar {
+    font-size: 1.2rem;
+  }
+
+  /* Data e ora più piccola */
+  .sidebar-datetime {
+    padding: 12px 15px;
+    font-size: 0.65rem;
+  }
+
+  /* Link più piccoli */
+  .sidebar-link {
+    font-size: 0.7rem;
+  }
+
+  .sidebar-links {
+    padding: 8px 15px;
+  }
+
+  /* Menu principale */
+  .sidebar-nav {
+    padding: 15px;
+  }
+
+  .has-submenu a {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  /* Sottomenu */
+  .submenu {
+    padding-left: 15px;
+  }
+
+  .submenu li a {
+    padding: 4px 10px;
+    font-size: 0.7rem;
+  }
+
+  /* Info utili */
+  .sidebar-info-title {
+    font-size: 0.75rem;
+    padding: 8px 15px;
+  }
+
+  .sidebar-info-list {
+    padding: 0 15px 15px 15px;
+  }
+
+  .sidebar-info-list li a {
+    font-size: 0.7rem;
+    padding: 3px 0;
+  }
+
+  /* Separatore e divisori */
+  .sidebar-divider {
+    margin: 10px 15px;
   }
 
   /*navBar*/
