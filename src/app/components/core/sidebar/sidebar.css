@@ -75,23 +75,30 @@
 /* ============================================ */
 /* CAMPO DI RICERCA                            */
 /* ============================================ */
+.sidebar-search-container {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
 
 .sidebar-search {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 15px 20px;
-  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 15px;
+  border: 1px solid rgba(85, 85, 85, 0.3);
+  border-radius: 2px;
+  transition: all 0.2s ease;
 }
 
 .sidebar-search i {
-  color: #999;
+  color: black;
   font-size: 1rem;
 }
 
 .search-input {
   border: none;
   outline: none;
+  background: transparent;
   font-size: 0.9rem;
   width: 100%;
   font-family: Arial, sans-serif;
@@ -99,6 +106,12 @@
 
 .search-input::placeholder {
   color: #bbb;
+}
+
+.sidebar-search:focus-within {
+  border-color: #bd0101 !important;
+  border-width: 2px !important;
+  background-color: #ffffff;
 }
 
 /* ============================================ */

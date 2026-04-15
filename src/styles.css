@@ -132,8 +132,8 @@ body, button, input, select, textarea {
 
   /* Sidebar */
   .sidebar-menu {
-    width: 280px !important;
-    left: -280px !important;
+    width: 100% !important;
+    left: -100% !important;
   }
 
   /* Header più compatto */
@@ -214,6 +214,10 @@ body, button, input, select, textarea {
     gap: 12px !important;
     padding: 8px 15px !important;
     border-bottom: 1px solid #e0e0e0 !important;
+  }
+
+  .sidebar-search-container {
+    padding: 12px;
   }
 
   .sidebar-menu.active {
