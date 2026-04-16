@@ -145,7 +145,6 @@
   margin-bottom: 5px;
 }
 
-
 .has-submenu a {
   display: flex;
   justify-content: space-between;
@@ -192,7 +191,7 @@
 }
 
 /* ============================================ */
-/* SOTTOMENU DI PRIMO LIVELLO                  */
+/* SOTTOMENU DI PRIMO LIVELLO                   */
 /* ============================================ */
 
 .submenu {
@@ -340,7 +339,7 @@
 /* MEDIA QUERY - TELEFONI (max 576px)           */
 /* ============================================ */
 
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
   .sidebar-menu {
     width: 100% !important;
     left: -100% !important;
@@ -350,12 +349,12 @@
     left: 0 !important;
   }
 
-  /* Header più compatto */
+  !* Header più compatto *!
   .sidebar-header {
     padding: 15px;
   }
 
-  /*bottoni*/
+  !*bottoni*!
   .sidebar-buttons {
     display: flex !important;
     justify-content: flex-start !important;
@@ -397,7 +396,7 @@
     color: white;
   }
 
-  /* Data e ora */
+  !* Data e ora *!
   .sidebar-datetime {
     display: flex !important;
     gap: 3px !important;
@@ -408,7 +407,7 @@
     margin-top: 20px !important;
   }
 
-  /* Link Abbonamenti e Ultime edizioni */
+  !* Link Abbonamenti e Ultime edizioni *!
   .sidebar-links {
     display: flex !important;
     gap: 12px !important;
@@ -427,7 +426,7 @@
   .sidebar-menu.active * {
     visibility: visible !important;
   }
-  /* Menu principale */
+  !* Menu principale *!
   .sidebar-nav {
     padding: 15px;
   }
@@ -436,7 +435,7 @@
     padding: 6px 10px;
   }
 
-  /* Sottomenu */
+  !* Sottomenu *!
   .submenu {
     padding-left: 15px;
   }
@@ -445,7 +444,7 @@
     padding: 4px 10px;
   }
 
-  /* Info utili */
+  !* Info utili *!
   .sidebar-title {
     padding: 8px 15px;
   }
@@ -458,16 +457,16 @@
     padding: 3px 0;
   }
 
-  /* Separatore e divisori */
+  !* Separatore e divisori *!
   .sidebar-divider {
     margin: 10px 15px;
   }
-}
+}*/
 
 /* ============================================ */
 /* MEDIA QUERY - TABLET (577px - 768px)         */
 /* ============================================ */
-@media (min-width: 577px) and (max-width: 768px) {
+@media /*(min-width: 577px) and*/ (max-width: 768px) {
   .sidebar-menu {
     width: 380px !important;
     left: -380px !important;
