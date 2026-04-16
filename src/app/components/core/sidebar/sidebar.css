@@ -307,7 +307,7 @@
 }
 
 /* Titolo Info utili */
-.sidebar-info-title {
+.sidebar-title {
   font-size: 0.85rem;
   font-weight: 700;
   color: rgba(85, 85, 85, 0.8);
@@ -317,17 +317,17 @@
 }
 
 /* Lista Info utili */
-.sidebar-info-list {
+.sidebar-list {
   list-style: none;
   padding: 0 20px 20px 20px;
   margin: 0;
 }
 
-.sidebar-info-list li {
+.sidebar-list li {
   margin-bottom: 10px;
 }
 
-.sidebar-info-list li a {
+.sidebar-list li a {
   color: black;
   text-decoration: none;
   font-size: 1rem;
@@ -446,15 +446,15 @@
   }
 
   /* Info utili */
-  .sidebar-info-title {
+  .sidebar-title {
     padding: 8px 15px;
   }
 
-  .sidebar-info-list {
+  .sidebar-list {
     padding: 0 15px 15px 15px;
   }
 
-  .sidebar-info-list li a {
+  .sidebar-list li a {
     padding: 3px 0;
   }
 
@@ -569,15 +569,15 @@
   }
 
   /* Info utili */
-  .sidebar-info-title {
+  .sidebar-title {
     padding: 8px 15px;
   }
 
-  .sidebar-info-list {
+  .sidebar-list {
     padding: 0 15px 15px 15px;
   }
 
-  .sidebar-info-list li a {
+  .sidebar-list li a {
     padding: 3px 0;
   }
 
