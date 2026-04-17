@@ -9,12 +9,11 @@ import {Articles} from './components/layout/articles/articles';
 import {Hero} from './components/layout/hero/hero';
 import {Cards} from './components/layout/cards/cards';
 import {Subscriptionbox} from './components/features/subscriptionbox/subscriptionbox';
-import {Prefooter} from './components/core/prefooter/prefooter';
 import {Copyright} from './components/core/copyright/copyright';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Footer, Sidebar, Topbar, Header, Navmenu, Articles, Hero, Cards, Subscriptionbox, Prefooter, Copyright],
+  imports: [RouterOutlet, Footer, Sidebar, Topbar, Header, Navmenu, Articles, Hero, Cards, Subscriptionbox, Copyright],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
