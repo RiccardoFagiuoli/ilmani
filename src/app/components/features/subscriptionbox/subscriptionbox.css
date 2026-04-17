@@ -33,7 +33,7 @@
 /* MEDIA QUERY - TELEFONI (max 576px)           */
 /* ============================================ */
 
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
   .subscription-box {
     padding: 1.5rem;
     margin: 1rem 0;
@@ -51,13 +51,13 @@
     font-size: 0.8rem;
     padding: 8px 16px;
   }
-}
+}*/
 
 /* ============================================ */
 /* MEDIA QUERY - TABLET (577px - 768px)         */
 /* ============================================ */
 @media (min-width: 577px) and (max-width: 768px) {
   .subscription-box {
-    padding: 2rem;
+    padding: 4rem;
   }
 }

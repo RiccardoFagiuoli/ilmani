@@ -7,7 +7,7 @@
 /* MEDIA QUERY - TELEFONI (max 576px)           */
 /* ============================================ */
 
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
   .hero-section h1 {
     font-size: 1.4rem;
   }
@@ -19,12 +19,12 @@
   .hero-meta {
     font-size: 0.65rem;
   }
-}
+}*/
 
 /* ============================================ */
 /* MEDIA QUERY - TABLET (577px - 768px)         */
 /* ============================================ */
-@media (min-width: 577px) and (max-width: 768px) {
+@media /*(min-width: 577px) and*/ (max-width: 768px) {
   .hero-section h1 {
     font-size: 1.8rem;
   }

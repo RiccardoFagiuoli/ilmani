@@ -90,7 +90,7 @@ footer .btn-outline-danger:hover {
 /* ============================================ */
 @media /*(min-width: 577px) and*/ (max-width: 768px) {
   .rectangle {
-    width: 300px;
+    width: 250px;
     margin-left: 0;
   }
 
