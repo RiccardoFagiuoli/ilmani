@@ -63,7 +63,7 @@ footer .btn-outline-danger:hover {
 /* MEDIA QUERY - TELEFONI (max 576px)           */
 /* ============================================ */
 
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
   .rectangle {
     width: 100%;
     margin-left: 0;
@@ -83,12 +83,12 @@ footer .btn-outline-danger:hover {
   .footer-col a {
     font-size: 0.8rem;
   }
-}
+}*/
 
 /* ============================================ */
 /* MEDIA QUERY - TABLET (577px - 768px)         */
 /* ============================================ */
-@media (min-width: 577px) and (max-width: 768px) {
+@media /*(min-width: 577px) and*/ (max-width: 768px) {
   .rectangle {
     width: 40%;
     margin-left: 0;
