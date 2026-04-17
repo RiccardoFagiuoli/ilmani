@@ -468,8 +468,8 @@
 /* ============================================ */
 @media /*(min-width: 577px) and*/ (max-width: 768px) {
   .sidebar-menu {
-    width: 380px !important;
-    left: -380px !important;
+    width: 360px !important;
+    left: -360px !important;
   }
 
   .sidebar-menu.active {
