@@ -1,14 +1,7 @@
-/* ============================================ */
-/* MEDIA QUERY - TELEFONI (max 576px)           */
-/* ============================================ */
+.card {
+  border-radius: 0 !important;
+}
 
-/*@media (max-width: 576px) {
-  .card-title {
-    font-size: 0.9rem !important;
-  }
-}*/
-
-/* ============================================ */
-/* MEDIA QUERY - TABLET (577px - 768px)         */
-/* ============================================ */
-@media /*(min-width: 577px) and*/ (max-width: 768px) {}
+.card-img-top {
+  border-radius: 0 !important;
+}

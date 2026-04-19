@@ -63,36 +63,7 @@ footer .btn-outline-danger:hover {
   color: white !important;
 }
 
-/* ============================================ */
-/* MEDIA QUERY - TELEFONI (max 576px)           */
-/* ============================================ */
-
-/*@media (max-width: 576px) {
-  .rectangle {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .footer-tagline {
-    font-size: 1rem;
-  }
-
-  .btn-footer-abbonati,
-  .btn-footer-accedi {
-    padding: 8px 16px !important;
-    font-size: 0.8rem !important;
-  }
-
-  .footer-info a,
-  .footer-col a {
-    font-size: 0.8rem;
-  }
-}*/
-
-/* ============================================ */
-/* MEDIA QUERY - TABLET (577px - 768px)         */
-/* ============================================ */
-@media /*(min-width: 577px) and*/ (max-width: 768px) {
+@media (max-width: 1020px) {
   .rectangle {
     width: 250px;
     margin-left: 0;

@@ -67,7 +67,6 @@
   height: 100%;
   width: auto;
   object-fit: cover;
-  border-radius: 0px;
 }
 
 .close-sidebar {
@@ -134,7 +133,6 @@
 
 .sidebar-nav {
   list-style: none;
-  padding: 0px;
 }
 
 .has-submenu {
@@ -335,138 +333,7 @@
   transition: color 0.2s;
 }
 
-/* ============================================ */
-/* MEDIA QUERY - TELEFONI (max 576px)           */
-/* ============================================ */
-
-/*@media (max-width: 576px) {
-  .sidebar-menu {
-    width: 100% !important;
-    left: -100% !important;
-  }
-
-  .sidbar-menu.active{
-    left: 0 !important;
-  }
-
-  !* Header più compatto *!
-  .sidebar-header {
-    padding: 15px;
-  }
-
-  !*bottoni*!
-  .sidebar-buttons {
-    display: flex !important;
-    justify-content: flex-start !important;
-    gap: 15px;
-    padding: 20px;
-    border-bottom: 1px solid #e0e0e0;
-  }
-
-  .btn-abbonati-sidebar {
-    background-color: #bd0101;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    border-radius: 2px;
-    transition: background-color 0.3s;
-    cursor: pointer;
-  }
-
-  .btn-abbonati-sidebar:hover {
-    background-color: #762c33;
-  }
-
-  .btn-entra-sidebar {
-    background-color: transparent;
-    border: 1px solid #bd0101;
-    color: #bd0101;
-    padding: 8px 20px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    border-radius: 2px;
-    transition: all 0.3s;
-    cursor: pointer;
-  }
-
-  .btn-entra-sidebar:hover {
-    background-color: #bd0101;
-    color: white;
-  }
-
-  !* Data e ora *!
-  .sidebar-datetime {
-    display: flex !important;
-    gap: 3px !important;
-    padding: 12px 15px !important;
-    font-size: 0.5rem !important;
-    color: rgba(85, 85, 85, 0.8) !important;
-    border-top: 1px solid #e0e0e0 !important;
-    margin-top: 20px !important;
-  }
-
-  !* Link Abbonamenti e Ultime edizioni *!
-  .sidebar-links {
-    display: flex !important;
-    gap: 12px !important;
-    padding: 8px 15px !important;
-    border-bottom: 1px solid #e0e0e0 !important;
-  }
-
-  .sidebar-search-container {
-    padding: 12px;
-  }
-
-  .sidebar-menu.active {
-    left: 0 !important;
-  }
-
-  .sidebar-menu.active * {
-    visibility: visible !important;
-  }
-  !* Menu principale *!
-  .sidebar-nav {
-    padding: 15px;
-  }
-
-  .has-submenu a {
-    padding: 6px 10px;
-  }
-
-  !* Sottomenu *!
-  .submenu {
-    padding-left: 15px;
-  }
-
-  .submenu li a {
-    padding: 4px 10px;
-  }
-
-  !* Info utili *!
-  .sidebar-title {
-    padding: 8px 15px;
-  }
-
-  .sidebar-list {
-    padding: 0 15px 15px 15px;
-  }
-
-  .sidebar-list li a {
-    padding: 3px 0;
-  }
-
-  !* Separatore e divisori *!
-  .sidebar-divider {
-    margin: 10px 15px;
-  }
-}*/
-
-/* ============================================ */
-/* MEDIA QUERY - TABLET (577px - 768px)         */
-/* ============================================ */
-@media /*(min-width: 577px) and*/ (max-width: 768px) {
+@media (max-width: 1020px) {
   .sidebar-menu {
     width: 360px !important;
     left: -360px !important;

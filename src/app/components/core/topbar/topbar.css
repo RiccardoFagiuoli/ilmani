@@ -18,20 +18,7 @@
   text-decoration-thickness: 2px;
 }
 
-/* ============================================ */
-/* MEDIA QUERY - TELEFONI (max 576px)           */
-/* ============================================ */
-
-/*@media (max-width: 576px) {
-  .hide-on-mobile {
-    display: none !important;
-  }
-}*/
-
-/* ============================================ */
-/* MEDIA QUERY - TABLET (577px - 768px)         */
-/* ============================================ */
-@media /*(min-width: 577px) and*/ (max-width: 768px) {
+@media (max-width: 1020px) {
   .hide-on-mobile {
     display: none !important;
   }

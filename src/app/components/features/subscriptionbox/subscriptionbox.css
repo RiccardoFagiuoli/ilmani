@@ -29,34 +29,7 @@
   color: #f3f3f3;
 }
 
-/* ============================================ */
-/* MEDIA QUERY - TELEFONI (max 576px)           */
-/* ============================================ */
-
-/*@media (max-width: 576px) {
-  .subscription-box {
-    padding: 1.5rem;
-    margin: 1rem 0;
-  }
-
-  .subscription-box h3 {
-    font-size: 1.3rem;
-  }
-
-  .subscription-box .text {
-    font-size: 0.9rem;
-  }
-
-  .btn-subscription-special {
-    font-size: 0.8rem;
-    padding: 8px 16px;
-  }
-}*/
-
-/* ============================================ */
-/* MEDIA QUERY - TABLET (577px - 768px)         */
-/* ============================================ */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (max-width: 1020px) {
   .subscription-box {
     padding: 4rem;
   }
