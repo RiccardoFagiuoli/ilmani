@@ -85,8 +85,9 @@ body, button, input, select, textarea {
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 768px) {
   .container {
-    width: 80%;
+    width: 90%;
+    max-width: none;
   }
 }
