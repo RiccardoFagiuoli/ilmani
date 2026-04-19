@@ -5,6 +5,14 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+/* Hover categorie: colore #762c33 */
+.article-category:hover {
+  color: #762c33;
+  cursor: pointer;
 }
 
 /* Titoli articoli */
@@ -38,37 +46,50 @@
   line-height: 1.5;
 }
 
-/* Card hover effects */
-.main-article-card,
-.secondary-article-card,
-.small-article-card {
-  transition: transform 0.2s ease;
+/* Link nei titoli - hover con sottolineatura colore #762c33 */
+.article-title a,
+.article-subtitle a,
+.article-small-title a,
+h5 a {
+  transition: text-decoration-color 0.2s ease;
 }
 
-.main-article-card:hover,
-.secondary-article-card:hover,
-.small-article-card:hover {
-  transform: translateY(-2px);
-}
-
-/* Link hover */
 .article-title a:hover,
 .article-subtitle a:hover,
 .article-small-title a:hover,
 h5 a:hover {
-  color: #bd0101 !important;
+  text-decoration: underline;
+  text-decoration-color: #762c33;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  color: #1a1a1a;
 }
 
-/* Deep article card */
+/* Rimuove trasformazioni hover sui box */
+.main-article-card,
+.secondary-article-card,
+.small-article-card,
+.deep-article-card {
+  transition: none;
+}
+
+.main-article-card:hover,
+.secondary-article-card:hover,
+.small-article-card:hover,
+.deep-article-card:hover {
+  transform: none;
+  background-color: transparent;
+}
+
+/* Deep article card - senza hover background */
 .deep-article-card {
   background-color: #f9f9f7;
   padding: 15px;
   border-radius: 8px;
-  transition: background 0.2s;
 }
 
-.deep-article-card:hover {
-  background-color: #f0f0eb;
+.hover-underline:hover {
+  text-decoration: underline !important;
 }
 
 /* Responsive */
