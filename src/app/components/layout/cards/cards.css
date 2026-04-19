@@ -5,3 +5,26 @@
 .card-img-top {
   border-radius: 0 !important;
 }
+
+@media (max-width: 768px) {
+  .row.g-4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row.g-4 > [class*="col-"] {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .row.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row.g-4 > [class*="col-"] {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}

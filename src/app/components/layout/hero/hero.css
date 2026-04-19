@@ -148,3 +148,70 @@
 .grid-item {
   flex: 1;
 }
+
+
+@media (max-width: 768px) {
+  .two-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Colonna sinistra e destra occupano tutta la larghezza */
+  .left-column,
+  .right-column {
+    flex: auto;
+    width: 100%;
+  }
+
+  /* Articolo principale: testo sopra, immagine sotto */
+  .main-article {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-article-image {
+    order: 2;
+  }
+
+  .main-article-content {
+    order: 1;
+  }
+
+  /* Articolo con immagine a sinistra: immagine sopra, testo sotto */
+  .side-image-article {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .side-image {
+    width: 100%;
+    order: 1;
+  }
+
+  .side-content {
+    order: 2;
+  }
+
+  /* Griglia a 2 colonne diventa 1 colonna */
+  .two-col-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Riduzione dimensioni font per mobile */
+  .title.fs-3 {
+    font-size: 1.75rem;
+  }
+
+  .title.fs-4 {
+    font-size: 1.5rem;
+  }
+
+  .preview-article {
+    font-size: 13px;
+  }
+
+  .author {
+    font-size: 12px;
+  }
+}

@@ -57,7 +57,7 @@
   .nav-links {
     display: flex;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 35px;
     justify-content: flex-start;
     width: max-content;
   }

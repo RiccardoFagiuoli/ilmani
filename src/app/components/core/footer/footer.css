@@ -6,7 +6,7 @@
   background-color: #f6f5f5;
   padding: 1.25rem;
   border-radius: 3px;
-  width: 95%;
+  width: 100%;
   margin-left: 5px;
   margin-right: auto;
 }
@@ -63,7 +63,8 @@ footer .btn-outline-danger:hover {
   color: white !important;
 }
 
-@media (max-width: 1020px) {
+
+@media (max-width: 768px) {
   .rectangle {
     width: 250px;
     margin-left: 0;
