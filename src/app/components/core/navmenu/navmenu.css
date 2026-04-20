@@ -1,6 +1,6 @@
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   list-style: none;
   gap: 35px;
   justify-content: flex-start;
@@ -9,8 +9,9 @@
 .nav-link {
   color: #1a1a1a;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 0.5rem 0;
+  white-space: nowrap;
 }
 
 .nav-links .nav-link:hover {
@@ -57,9 +58,10 @@
   .nav-links {
     display: flex;
     flex-wrap: nowrap;
-    gap: 35px;
+    gap: 45px;
     justify-content: flex-start;
     width: max-content;
+    font-size: 1.1rem;
   }
 
   .nav-link {
