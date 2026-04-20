@@ -2,3 +2,10 @@
    width: 100%;
    height: auto;
  }
+
+ .container{
+   width: 100%;
+   height: auto;
+   padding-right: 0;
+   padding-left: 0;
+ }
