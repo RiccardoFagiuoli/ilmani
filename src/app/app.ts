@@ -10,12 +10,26 @@ import {Hero} from './components/layout/hero/hero';
 import {Cards} from './components/layout/cards/cards';
 import {Subscriptionbox} from './components/features/subscriptionbox/subscriptionbox';
 import {Copyright} from './components/core/copyright/copyright';
+import { Ad } from './components/features/ad/ad';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Footer, Sidebar, Topbar, Header, Navmenu, Articles, Hero, Cards, Subscriptionbox, Copyright],
+  imports: [
+    RouterOutlet,
+    Footer,
+    Sidebar,
+    Topbar,
+    Header,
+    Navmenu,
+    Articles,
+    Hero,
+    Cards,
+    Subscriptionbox,
+    Copyright,
+    Ad,
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('ilmani');
