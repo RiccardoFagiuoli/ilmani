@@ -3,6 +3,10 @@
    height: auto;
  }
 
+ .ratio{
+   aspect-ratio: 5/1;
+ }
+
  .container{
    width: 100%;
    height: auto;
