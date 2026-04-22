@@ -181,6 +181,10 @@
   outline-offset: 2px;
 }
 
+.author{
+  font-family: Arial, sans-serif;
+}
+
 @media (max-width: 768px) {
   .two-columns {
     flex-direction: column;

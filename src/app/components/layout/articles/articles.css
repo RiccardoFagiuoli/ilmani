@@ -1,3 +1,28 @@
+.bold-first{
+  font-weight: bold;
+}
+
+/* Linee tra le colonne */
+.row-with-lines {
+  position: relative;
+}
+
+/* Ogni colonna deve essere position relative */
+.row-with-lines > [class*="col-"] {
+  position: relative;
+}
+
+/* Linea VERTICALE tra le colonne */
+.row-with-lines > [class*="col-"]:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: var(--gray-light);
+}
+
 /* Categorie articoli */
 .article-category {
   color: var(--primary-red);
@@ -95,11 +120,6 @@ h5 a:hover {
   text-decoration: underline !important;
 }
 
-/* Linea grigia decorativa */
-.gray-line {
-  border-top: 1px solid var(--gray-light);
-  width: 100%;
-}
 
 /* ============================================ */
 /* ACCESSIBILITA' - FOCUS VISIBILE              */
@@ -121,11 +141,31 @@ img:focus-visible {
   outline-offset: 2px;
 }
 
+
 /* ============================================ */
 /* RESPONSIVE                                   */
 /* ============================================ */
 
 @media (max-width: 768px) {
+  .row-with-lines > [class*="col-"]:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    top: auto;
+    transform: none;
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+  }
+
+  /* Aggiunge spazio per la linea */
+  .row-with-lines > [class*="col-"] {
+    margin-bottom: 30px;
+    position: relative;
+  }
+
   .article-title {
     font-size: 1.4rem;
   }
