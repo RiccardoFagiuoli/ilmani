@@ -28,10 +28,9 @@
 /* ACCESSIBILITA' - FOCUS VISIBILE              */
 /* ============================================ */
 
-.nav-link:focus-visible {
-  outline: 2px solid var(--focus-red);
-  outline-offset: 2px;
-  border-radius: 2px;
+*:focus-visible {
+  outline: auto 2px var(--focus-red) !important;
+  outline-offset: 0 !important;
 }
 
 /* ============================================ */

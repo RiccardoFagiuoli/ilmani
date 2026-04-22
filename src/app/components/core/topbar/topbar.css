@@ -21,12 +21,10 @@
 }
 
 /* Focus visibile per accessibilità */
-.top-link :focus-visible {
-  outline: 2px solid var(--focus-red);
-  outline-offset: 2px;
-  border-radius: 2px;
+*:focus-visible {
+  outline: auto 2px var(--focus-red) !important;
+  outline-offset: 0 !important;
 }
-
 /* Nasconde la topbar su mobile */
 @media (max-width: 1020px) {
   .hide-on-mobile {
