@@ -1,6 +1,6 @@
 .subscription-box {
   width: 100%;
-  background-color: #bd0101;
+  background-color: var(--primary-red);
   padding: 4rem;
   align-items: center;
   text-align: center;
@@ -9,28 +9,65 @@
 
 .btn-subscription-special {
   background-color: white;
-  color: #bd0101;
+  color: var(--primary-red);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .btn-subscription-special:hover {
-  background-color: #f3f3f3;
+  background-color: var(--gray-light);
 }
 
 .subscription-link {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .subscription-link:hover {
-  color: #f3f3f3;
+  color: var(--gray-light);
 }
 
+/* ============================================ */
+/* ACCESSIBILITA'                               */
+/* ============================================ */
+
+/* Focus visibile per tastiera - bottone */
+.btn-subscription-special:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+  border-radius: 5px;
+}
+
+/* Focus visibile per tastiera - link */
+.subscription-link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Migliora contrasto testo su sfondo rosso */
+.subscription-box h3,
+.subscription-box p,
+.subscription-link {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
 @media (max-width: 1020px) {
   .subscription-box {
-    padding: 4rem;
+    padding: 2rem;  /* ridotto per mobile */
+  }
+
+  .btn-subscription-special {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .subscription-link {
+    font-size: 0.9rem;
   }
 }

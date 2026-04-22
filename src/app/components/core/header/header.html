@@ -2,20 +2,20 @@
   <div class="container">
     <div class="header-content">
       <div class="header-left">
-        <button class="hamburger-btn" id="hamburgerBtn" (click)="openSidebar()">
-          <i class="fas fa-bars"></i>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Apri menu Esplora" (click)="openSidebar()">
+          <i class="fas fa-bars" aria-hidden="true"></i>
           <span class="fw-normal">Esplora</span>
         </button>
       </div>
       <div class="header-center">
-        <img src="https://placehold.co/350x60/cccccc/666666?text=LOGO" alt="Logo" class="logo-img" id="mainLogo" [style.height.px]="logoHeight">
+        <img src="https://placehold.co/350x60/cccccc/666666?text=LOGO" alt="" class="logo-img" id="mainLogo" [style.height.px]="logoHeight" aria-label="Logo del sito">
       </div>
       <div class="header-right">
-        <button class="btn-abbonati-top">Abbonati</button>
-        <button class="btn-entra-top">Entra</button>
+        <button class="btn-abbonati-top" aria-label="Abbonati">Abbonati</button>
+        <button class="btn-entra-top" aria-label="Entra">Entra</button>
       </div>
     </div>
   </div>
 </div>
 
-<div class="red-line"></div>
+<div class="red-line" aria-hidden="true"></div>

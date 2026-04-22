@@ -1,15 +1,38 @@
- .ad{
-   width: 100%;
-   height: auto;
- }
+.ad {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
 
- .ratio{
-   aspect-ratio: 5/1;
- }
+.ratio {
+  aspect-ratio: 5 / 1;
+  width: 100%;
+  object-fit: cover;
+}
 
- .container{
-   width: 100%;
-   height: auto;
-   padding-right: 0;
-   padding-left: 0;
- }
+.ad-container {
+  width: 100%;
+  height: auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Linea decorativa grigia */
+.gray-line {
+  border-top: 1px solid var(--gray-lighter);
+  width: 100%;
+}
+
+/* Focus visibile per il link */
+.ad:focus-visible {
+  outline: 2px solid var(--focus-red);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Focus visibile per l'immagine (se focus arriva su di essa) */
+.ad img:focus-visible {
+  outline: 2px solid var(--focus-red);
+  outline-offset: 2px;
+}

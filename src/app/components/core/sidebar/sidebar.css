@@ -1,3 +1,42 @@
+.close-sidebar:focus-visible,
+.btn-abbonati-sidebar:focus-visible,
+.btn-entra-sidebar:focus-visible,
+.sidebar-link:focus-visible,
+.search-input:focus-visible,
+.has-submenu a:focus-visible,
+.submenu li a:focus-visible,
+.submenu-level2 li a:focus-visible,
+.sidebar-list li a:focus-visible {
+  outline: 2px solid var(--focus-red);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Rimuove outline fastidioso su focus mouse (mantiene solo tastiera) */
+.close-sidebar:focus:not(:focus-visible),
+.btn-abbonati-sidebar:focus:not(:focus-visible),
+.btn-entra-sidebar:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Indica che gli elementi sono interattivi */
+.has-submenu a,
+.close-sidebar,
+.sidebar-link,
+.sidebar-list li a {
+  cursor: pointer;
+}
+
+/* Contrasto per placeholder input */
+.search-input::placeholder {
+  color: var(--gray-medium);
+}
+
+/* Assicura che l'overlay sia accessibile */
+.overlay.active {
+  display: block;
+}
+
 /* ============================================ */
 /* SIDEBAR MENU - BASE                         */
 /* ============================================ */
@@ -46,11 +85,11 @@
 /* ============================================ */
 
 .sidebar-header {
-  background-color: #f6f5f5;
+  background-color: var(--gray-lighter);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--gray-light);
   height: 80px;
   position: relative;
 }
@@ -82,7 +121,7 @@
 }
 
 .close-sidebar:hover {
-  color: #bd0101;
+  color: var(--primary-red);
 }
 
 /* ============================================ */
@@ -90,7 +129,7 @@
 /* ============================================ */
 .sidebar-search-container {
   padding: 20px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--gray-light);
 }
 
 .sidebar-search {
@@ -122,7 +161,7 @@
 }
 
 .sidebar-search:focus-within {
-  border-color: #bd0101 !important;
+  border-color: var(--primary-red) !important;
   border-width: 2px !important;
   background-color: #ffffff;
 }
@@ -133,13 +172,14 @@
 
 .sidebar-nav {
   list-style: none;
+  padding-left: 0;
 }
 
 .has-submenu {
   cursor: pointer;
   border-radius: 4px;
   transition: background 0.2s;
-  box-shadow: inset 0 -1px 0 0 #e0e0e0;  /* bordo lungo */
+  box-shadow: inset 0 -1px 0 0 var(--gray-light);  /* bordo lungo */
   margin-bottom: 5px;
 }
 
@@ -147,7 +187,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 15px;
+  padding: 8px 25px;
   color: black;
   text-decoration: none;
   font-size: 1.2rem;
@@ -156,7 +196,7 @@
 
 .has-submenu a i {
   font-size: 1.2rem;
-  color: #bd0101;
+  color: var(--primary-red);
   padding: 4px;
   transition: transform 0.3s ease;
   border-radius: 4px;
@@ -194,7 +234,7 @@
 
 .submenu {
   list-style: none;
-  padding-left: 0;
+  padding-left: 15px;
   margin-top: 0;
   margin-bottom: 0;
   display: none;
@@ -272,7 +312,7 @@
 
 .sidebar-nav hr {
   margin: 15px 0;
-  border-color: #e0e0e0;
+  border-color: var(--gray-light);
 }
 
 /* ============================================ */
@@ -299,7 +339,7 @@
 /* Separatore */
 .sidebar-divider {
   height: 1px;
-  background-color: #e0e0e0;
+  background-color: var(--gray-light);
   margin: 15px 20px;
 }
 
@@ -308,7 +348,7 @@
   font-size: 0.85rem;
   font-weight: 700;
   color: rgba(85, 85, 85, 0.8);
-  padding: 10px 20px;
+  padding: 10px 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -316,7 +356,7 @@
 /* Lista Info utili */
 .sidebar-list {
   list-style: none;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 20px 25px;
   margin: 0;
 }
 
@@ -354,11 +394,11 @@
     justify-content: flex-start !important;
     gap: 12px;
     padding: 25px 20px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--gray-light);
   }
 
   .btn-abbonati-sidebar {
-    background-color: #bd0101;
+    background-color: var(--primary-red);
     color: white;
     border: none;
     padding: 6px 16px;
@@ -370,13 +410,13 @@
   }
 
   .btn-abbonati-sidebar:hover {
-    background-color: #762c33;
+    background-color: var(--primary-red-hover);
   }
 
   .btn-entra-sidebar {
     background-color: transparent;
-    border: 1px solid #bd0101;
-    color: #bd0101;
+    border: 1px solid var(--primary-red);
+    color: var(--primary-red);
     padding: 6px 16px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -386,7 +426,7 @@
   }
 
   .btn-entra-sidebar:hover {
-    background-color: #bd0101;
+    background-color: var(--primary-red);
     color: white;
   }
 
@@ -397,7 +437,7 @@
     padding: 15px 20px !important;
     font-size: 0.8rem !important;
     color: rgba(85, 85, 85, 0.8) !important;
-    border-top: 1px solid #e0e0e0 !important;
+    border-top: 1px solid var(--gray-light) !important;
     margin-top: 20px !important;
   }
 
@@ -406,7 +446,7 @@
     display: flex !important;
     gap: 15px !important;
     padding: 10px 20px !important;
-    border-bottom: 1px solid #e0e0e0 !important;
+    border-bottom: 1px solid var(--gray-light) !important;
   }
   .sidebar-menu.active {
     left: 0 !important;
@@ -418,11 +458,11 @@
 
   /* Menu principale */
   .sidebar-nav {
-    padding: 15px;
+    padding: 0px;
   }
 
   .has-submenu a {
-    padding: 6px 10px;
+    padding: 6px 25px;
   }
 
   /* Sottomenu */
@@ -436,11 +476,11 @@
 
   /* Info utili */
   .sidebar-title {
-    padding: 8px 15px;
+    padding: 8px 25px;
   }
 
   .sidebar-list {
-    padding: 0 15px 15px 15px;
+    padding: 0 15px 15px 20px;
   }
 
   .sidebar-list li a {

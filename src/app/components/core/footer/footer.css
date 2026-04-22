@@ -3,7 +3,7 @@
 }
 
 .rectangle {
-  background-color: #f6f5f5;
+  background-color: var(--gray-lighter);
   padding: 1.25rem;
   border-radius: 3px;
   width: 100%;
@@ -44,25 +44,35 @@ footer a:hover,
 
 /* Bottoni footer */
 footer .btn-danger {
-  background-color: #bd0101 !important;
-  border-color: #bd0101 !important;
+  background-color: var(--primary-red) !important;
+  border-color: var(--primary-red) !important;
 }
 
 footer .btn-danger:hover {
-  background-color: #762c33 !important;
-  border-color: #762c33 !important;
+  background-color: var(--primary-red-hover) !important;
+  border-color: var(--primary-red-hover) !important;
 }
 
 footer .btn-outline-danger {
-  color: #bd0101 !important;
-  border-color: #bd0101 !important;
+  color: var(--primary-red) !important;
+  border-color: var(--primary-red) !important;
 }
 
 footer .btn-outline-danger:hover {
-  background-color: #bd0101 !important;
+  background-color: var(--primary-red) !important;
   color: white !important;
 }
 
+footer a:focus-visible,
+.footer-col a:focus-visible,
+.footer-info a:focus-visible,
+.social-list a:focus-visible,
+.copyright-right a:focus-visible {
+  outline: 2px solid var(--focus-red);
+  outline-offset: 2px;
+  border-radius: 2px;
+  text-decoration: none;
+}
 
 @media (max-width: 768px) {
   .rectangle {
@@ -135,14 +145,15 @@ footer .btn-outline-danger:hover {
   /* BORDO tra RIGA 1 e RIGA 2 */
   .footer-col-notizie-wrapper,
   .footer-col-mani-wrapper {
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid 	var(--gray-light);
     padding-top: 30px;
     margin-bottom: 10px;
   }
 
   /* BORDO tra RIGA 2 e RIGA 3 */
   .footer-col-collettivo {
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid 	var(--gray-light);
     padding-top: 30px;
   }
 }
+

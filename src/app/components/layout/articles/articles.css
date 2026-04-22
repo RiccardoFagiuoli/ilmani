@@ -1,6 +1,6 @@
 /* Categorie articoli */
 .article-category {
-  color: #bd0101;
+  color: var(--primary-red);
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -8,11 +8,12 @@
   transition: color 0.2s ease;
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 }
 
-/* Hover categorie: colore #762c33 */
+/* Hover categorie*/
 .article-category:hover {
-  color: #762c33;
+  color: var(--primary-red-hover);
   cursor: pointer;
 }
 
@@ -47,12 +48,13 @@
   line-height: 1.5;
 }
 
-/* Link nei titoli - hover con sottolineatura colore #762c33 */
+/* Link nei titoli*/
 .article-title a,
 .article-subtitle a,
 .article-small-title a,
 h5 a {
   transition: text-decoration-color 0.2s ease;
+  cursor: pointer;
 }
 
 .article-title a:hover,
@@ -60,10 +62,10 @@ h5 a {
 .article-small-title a:hover,
 h5 a:hover {
   text-decoration: underline;
-  text-decoration-color: #762c33;
+  text-decoration-color: var(--primary-red-hover);
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-  color: #1a1a1a;
+  color: var(--text-dark);
 }
 
 /* Rimuove trasformazioni hover sui box */
@@ -93,7 +95,36 @@ h5 a:hover {
   text-decoration: underline !important;
 }
 
-/* Responsive */
+/* Linea grigia decorativa */
+.gray-line {
+  border-top: 1px solid var(--gray-light);
+  width: 100%;
+}
+
+/* ============================================ */
+/* ACCESSIBILITA' - FOCUS VISIBILE              */
+/* ============================================ */
+
+.article-category:focus-visible,
+.article-title a:focus-visible,
+.article-subtitle a:focus-visible,
+.article-small-title a:focus-visible,
+h5 a:focus-visible {
+  outline: 2px solid var(--focus-red);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Immagini */
+img:focus-visible {
+  outline: 2px solid var(--focus-red);
+  outline-offset: 2px;
+}
+
+/* ============================================ */
+/* RESPONSIVE                                   */
+/* ============================================ */
+
 @media (max-width: 768px) {
   .article-title {
     font-size: 1.4rem;

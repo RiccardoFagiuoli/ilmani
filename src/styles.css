@@ -1,12 +1,13 @@
-/* ============================================ */
-/* UTILITY CLASS PERSONALIZZATE                 */
-/* ============================================ */
+/*
+!* ============================================ *!
+!* UTILITY CLASS PERSONALIZZATE                 *!
+!* ============================================ *!
 :root {
   --main-font: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .fs-5-5 {
-  font-size: 1.125rem;  /* 18px */
+  font-size: 1.125rem;  !* 18px *!
 }
 
 .fs-0-8 {
@@ -29,9 +30,9 @@
   border-bottom: 1px solid #e0e0e0;
 }
 
-/* ============================================ */
-/* LAYOUT DI BASE (CONTAINER, BODY, HTML)       */
-/* ============================================ */
+!* ============================================ *!
+!* LAYOUT DI BASE (CONTAINER, BODY, HTML)       *!
+!* ============================================ *!
 
 html, body {
   margin: 0;
@@ -63,18 +64,18 @@ body, button, input, select, textarea {
   background-color: white;
 }
 
-/* ============================================ */
-/* TIPOGRAFIA GENERALE                          */
-/* ============================================ */
+!* ============================================ *!
+!* TIPOGRAFIA GENERALE                          *!
+!* ============================================ *!
 .hero-category,
 .article-category,
 .sidebar-category,
 .card-category {
   color: #bd0101;
   font-size: 0.7rem;
-  /*font-weight: bold;*/
+  !*font-weight: bold;*!
   text-transform: uppercase;
-  /*letter-spacing: 0.5px;*/
+  !*letter-spacing: 0.5px;*!
 }
 
 .section-title {
@@ -84,6 +85,135 @@ body, button, input, select, textarea {
   padding-left: 12px;
   margin-bottom: 1.5rem;
 }
+
+@media (max-width: 1020px) {
+  .container {
+    width: 85%;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1021px) and (max-width: 2200px) {
+  .container {
+    width: 90%;
+    max-width: none;
+  }
+}
+*/
+
+/* ============================================ */
+/* VARIABILI (COSTANTI)                         */
+/* ============================================ */
+:root {
+  --main-font: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --primary-red: #bd0101;
+  --primary-red-hover: #762c33;
+  --gray-light: #e0e0e0;
+  --gray-lighter: #f6f5f5;
+  --gray-medium: #888;
+  --gray-dark: #444;
+  --text-dark: #1a1a1a;
+  --focus-red: rgb(118 44 51 / 0.5);
+}
+/* ============================================ */
+/* UTILITY CLASS PERSONALIZZATE                 */
+/* ============================================ */
+.fs-5-5 {
+  font-size: 1.125rem;  /* 18px */
+}
+
+.fs-0-8 {
+  font-size: 0.8rem;
+}
+
+.fs-0-9 {
+  font-size: 0.85rem;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.rounded-0-1 {
+  border-radius: 0.1rem;
+}
+
+.gray-line {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+/* ============================================ */
+/* LAYOUT DI BASE (CONTAINER, BODY, HTML)       */
+/* ============================================ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--text-dark);
+}
+
+body, button, input, select, textarea {
+  font-family: var(--main-font), sans-serif;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+/* ============================================ */
+/* TIPOGRAFIA GENERALE                          */
+/* ============================================ */
+.hero-category,
+.article-category,
+.sidebar-category,
+.card-category {
+  color: var(--primary-red);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-left: 4px solid var(--primary-red);
+  padding-left: 12px;
+  margin-bottom: 1.5rem;
+}
+
+/* ============================================ */
+/* ACCESSIBILITA' GLOBALE - FOCUS VISIBILE      */
+/* ============================================ */
+
+*:focus-visible {
+  outline: 2px solid var(--focus-red);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Rimuove outline per mouse ma mantiene per tastiera */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ============================================ */
+/* RESPONSIVE                                   */
+/* ============================================ */
 
 @media (max-width: 1020px) {
   .container {

@@ -1,6 +1,7 @@
-.title{
+.title {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .title:hover {
@@ -24,17 +25,21 @@
   flex: 2;
 }
 
-
 .edition-header {
-  color: #cc0000;
+  color: var(--primary-red);
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 15px;
   text-decoration: none;
+  cursor: pointer;
 }
 
+.edition-header:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-red);
+}
 
 .cover-image {
   background-color: transparent;
@@ -49,20 +54,23 @@
 
 .sfoglia-btn {
   display: inline-block;
-  border: 1px solid #cc0000;
+  border: 1px solid var(--primary-red);
   background: transparent;
   padding: 8px 20px;
   font-size: 1rem;
   font-weight: bold;
-  color: #cc0000;
+  color: var(--primary-red);
   text-decoration: none;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
   border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
+
 .sfoglia-btn:hover {
-  background-color: #cc0000;
+  background-color: var(--primary-red);
   color: white;
 }
 
@@ -90,19 +98,20 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: red;
+  color: var(--primary-red);
   margin-bottom: 6px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .category:hover {
-  color: #762c33;
+  color: var(--primary-red-hover);
+  text-decoration: underline;
 }
-
 
 .author {
   font-size: 13px;
-  color: #444;
+  color: var(--gray-dark);
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -149,6 +158,28 @@
   flex: 1;
 }
 
+/* Linea grigia decorativa */
+.gray-line {
+  border-top: 1px solid var(--gray-light);
+  width: 100%;
+}
+
+.edition-header:focus-visible,
+.sfoglia-btn:focus-visible,
+.category:focus-visible,
+.title:focus-visible {
+  outline: 2px solid var(--focus-red);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Immagini: nessun outline fastidioso */
+.cover-image img:focus-visible,
+.main-article-image img:focus-visible,
+.side-image img:focus-visible {
+  outline: 2px solid var(--focus-red);
+  outline-offset: 2px;
+}
 
 @media (max-width: 768px) {
   .two-columns {
@@ -156,14 +187,12 @@
     gap: 30px;
   }
 
-  /* Colonna sinistra e destra occupano tutta la larghezza */
   .left-column,
   .right-column {
     flex: auto;
     width: 100%;
   }
 
-  /* Articolo principale: testo sopra, immagine sotto */
   .main-article {
     flex-direction: column;
     gap: 15px;
@@ -177,7 +206,6 @@
     order: 1;
   }
 
-  /* Articolo con immagine a sinistra: immagine sopra, testo sotto */
   .side-image-article {
     flex-direction: column;
     gap: 15px;
@@ -192,13 +220,11 @@
     order: 2;
   }
 
-  /* Griglia a 2 colonne diventa 1 colonna */
   .two-col-grid {
     flex-direction: column;
     gap: 20px;
   }
 
-  /* Riduzione dimensioni font per mobile */
   .title.fs-3 {
     font-size: 1.75rem;
   }

@@ -1,5 +1,5 @@
 .top-bar {
-  background-color: #f6f5f5;
+  background-color: var(--gray-lighter);
   font-size: 0.85rem;
 }
 
@@ -10,6 +10,8 @@
   text-decoration-color: rgba(85, 85, 85, 0.5);
   text-decoration-thickness: 0.5px;
   text-underline-offset: 1px;
+  cursor: pointer;
+  transition: text-decoration 0.3s ease;
 }
 
 .top-link:hover {
@@ -18,6 +20,14 @@
   text-decoration-thickness: 2px;
 }
 
+/* Focus visibile per accessibilità */
+.top-link :focus-visible {
+  outline: 2px solid var(--focus-red);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Nasconde la topbar su mobile */
 @media (max-width: 1020px) {
   .hide-on-mobile {
     display: none !important;

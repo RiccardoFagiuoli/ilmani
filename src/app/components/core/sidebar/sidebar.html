@@ -1,6 +1,7 @@
+<!--
 <div class="overlay" id="overlay" (click)="closeSidebar()"></div>
 
-<!-- Sidebar menu -->
+&lt;!&ndash; Sidebar menu &ndash;&gt;
 <div class="sidebar-menu" id="sidebarMenu">
   <div class="sidebar-header">
     <div class="sidebar-logo">
@@ -55,7 +56,7 @@
     </div>
   </div>
 
-  <!-- Menu principale -->
+  &lt;!&ndash; Menu principale &ndash;&gt;
   <ul class="sidebar-nav">
     <div class="sidebar-title">Sezioni</div>
     <li class="has-submenu" (click)="toggleSubmenu($event)">
@@ -517,4 +518,498 @@
   <li><a href="#">Privacy</a></li>
   <li><a href="#">Cookie</a></li>
 </ul>
+</div>
+-->
+
+<div class="overlay" id="overlay" (click)="closeSidebar()" aria-hidden="true"></div>
+
+<!-- Sidebar menu -->
+<div class="sidebar-menu" id="sidebarMenu" aria-label="Menu di navigazione laterale">
+  <div class="sidebar-header">
+    <div class="sidebar-logo">
+      <img src="https://placehold.co/40x40/cccccc/666666?text=LOGO" alt="" aria-label="Logo placeholder">
+    </div>
+    <button class="close-sidebar" (click)="closeSidebar()" aria-label="Chiudi menu">
+      <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <div class="sidebar-buttons">
+    <button class="btn-abbonati-sidebar" aria-label="Abbonati">Abbonati</button>
+    <button class="btn-entra-sidebar" aria-label="Entra">Entra</button>
+  </div>
+
+  <div class="sidebar-links">
+    <div class="row g-2">
+      <div class="col-6 col-md-6">
+        <a href="javascript:void(0)" class="sidebar-link" aria-label="Link - Edizione di oggi">Edizione di oggi</a>
+      </div>
+      <div class="col-6 col-md-6">
+        <a href="javascript:void(0)" class="sidebar-link" aria-label="Link - Abbonati">Abbonati</a>
+      </div>
+      <div class="col-6 col-md-6">
+        <a href="javascript:void(0)" class="sidebar-link" aria-label="Link - Politica">Politica</a>
+      </div>
+      <div class="col-6 col-md-6">
+        <a href="javascript:void(0)" class="sidebar-link" aria-label="Link - Internazionale">Internazionale</a>
+      </div>
+      <div class="col-6 col-md-6">
+        <a href="javascript:void(0)" class="sidebar-link" aria-label="Link - Cultura">Cultura</a>
+      </div>
+      <div class="col-6 col-md-6">
+        <a href="javascript:void(0)" class="sidebar-link" aria-label="Link - Visioni">Visioni</a>
+      </div>
+      <div class="col-6 col-md-6">
+        <a href="javascript:void(0)" class="sidebar-link" aria-label="Link - MdM">MdM</a>
+      </div>
+      <div class="col-6 col-md-6">
+        <a href="javascript:void(0)" class="sidebar-link" aria-label="Link - Podcast">Podcast</a>
+      </div>
+      <div class="col-12">
+        <a href="javascript:void(0)" class="sidebar-link" aria-label="Link - Newsletter">Newsletter</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-search-container">
+    <div class="sidebar-search">
+      <input type="text" placeholder="Cerca" class="search-input" aria-label="Campo di ricerca placeholder">
+      <i class="fas fa-search fc" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <!-- Menu principale -->
+  <ul class="sidebar-nav">
+    <div class="sidebar-title">Sezioni</div>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Commenti e rubriche<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Editoriali</a></li>
+        <li><a href="javascript:void(0)">Commenti</a></li>
+        <li><a href="javascript:void(0)">Rubriche</a></li>
+        <li><a href="javascript:void(0)">Lettere</a></li>
+        <li><a href="javascript:void(0)">Appelli</a></li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">ilmani</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Tizio Uno</a></li>
+            <li><a href="javascript:void(0)">Tizio Due</a></li>
+            <li><a href="javascript:void(0)">Tizio Tre</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Politica <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Politica</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">25 aprile</a></li>
+            <li><a href="javascript:void(0)">Bilancio</a></li>
+            <li><a href="javascript:void(0)">Giustizia</a></li>
+            <li><a href="javascript:void(0)">Tizio Quattro</a></li>
+            <li><a href="javascript:void(0)">Riforme</a></li>
+            <li><a href="javascript:void(0)">Referendum</a></li>
+            <li><a href="javascript:void(0)">Regionali</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Sinistra</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Anni 60</a></li>
+            <li><a href="javascript:void(0)">Anni 70</a></li>
+            <li><a href="javascript:void(0)">Pci</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Diritti</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Carcere</a></li>
+            <li><a href="javascript:void(0)">Droghe</a></li>
+            <li><a href="javascript:void(0)">Eutanasia</a></li>
+            <li><a href="javascript:void(0)">Salute</a></li>
+            <li><a href="javascript:void(0)">Unioni civili</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">Femminismi</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Italia <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Italia</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Immigrazione</a></li>
+            <li><a href="javascript:void(0)">Terremoto</a></li>
+            <li><a href="javascript:void(0)">Violenza maschile</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Chiesa</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Vaticano</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Città <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Città</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Bologna</a></li>
+            <li><a href="javascript:void(0)">Firenze</a></li>
+            <li><a href="javascript:void(0)">Genova</a></li>
+            <li><a href="javascript:void(0)">Milano</a></li>
+            <li><a href="javascript:void(0)">Napoli</a></li>
+            <li><a href="javascript:void(0)">Roma</a></li>
+            <li><a href="javascript:void(0)">Sardegna</a></li>
+            <li><a href="javascript:void(0)">Sicilia</a></li>
+            <li><a href="javascript:void(0)">Torino</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Lavoro e economia <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Economia</a></li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Lavoro</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Aiuto e dintorni</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Scuola, università e ricerca <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Scuola e università</a></li>
+        <li><a href="javascript:void(0)">Scienza</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Ambiente <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Ambiente</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Acqua</a></li>
+            <li><a href="javascript:void(0)">Agricoltura</a></li>
+            <li><a href="javascript:void(0)">Cibo</a></li>
+            <li><a href="javascript:void(0)">Clima</a></li>
+            <li><a href="javascript:void(0)">Energia</a></li>
+            <li><a href="javascript:void(0)">Grandi Opere</a></li>
+            <li><a href="javascript:void(0)">Turismo</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Europa <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Europa</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Austria</a></li>
+            <li><a href="javascript:void(0)">Balcani</a></li>
+            <li><a href="javascript:void(0)">Francia</a></li>
+            <li><a href="javascript:void(0)">Germania</a></li>
+            <li><a href="javascript:void(0)">Gran Bretagna</a></li>
+            <li><a href="javascript:void(0)">Grecia</a></li>
+            <li><a href="javascript:void(0)">Olanda</a></li>
+            <li><a href="javascript:void(0)">Polonia</a></li>
+            <li><a href="javascript:void(0)">Portogallo</a></li>
+            <li><a href="javascript:void(0)">Russia</a></li>
+            <li><a href="javascript:void(0)">Spagna</a></li>
+            <li><a href="javascript:void(0)">Turchia</a></li>
+            <li><a href="javascript:void(0)">Ucraina</a></li>
+            <li><a href="javascript:void(0)">Ungheria</a></li>
+            <li><a href="javascript:void(0)">Ue</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Esteri <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Internazionali</a></li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Usa</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Elettorale americana</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Africa</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Algeria</a></li>
+            <li><a href="javascript:void(0)">Egitto</a></li>
+            <li><a href="javascript:void(0)">Libia</a></li>
+            <li><a href="javascript:void(0)">Saharawi</a></li>
+            <li><a href="javascript:void(0)">Sudan</a></li>
+            <li><a href="javascript:void(0)">Tunisia</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">America latina</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Argentina</a></li>
+            <li><a href="javascript:void(0)">Brasile</a></li>
+            <li><a href="javascript:void(0)">Cuba</a></li>
+            <li><a href="javascript:void(0)">Venezuela</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Asia</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Afghanistan</a></li>
+            <li><a href="javascript:void(0)">Cina</a></li>
+            <li><a href="javascript:void(0)">Coree</a></li>
+            <li><a href="javascript:void(0)">India</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Medio Oriente</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Iran</a></li>
+            <li><a href="javascript:void(0)">Iraq</a></li>
+            <li><a href="javascript:void(0)">Israele</a></li>
+            <li><a href="javascript:void(0)">Kurdi</a></li>
+            <li><a href="javascript:void(0)">Libano</a></li>
+            <li><a href="javascript:void(0)">Palestina</a></li>
+            <li><a href="javascript:void(0)">Siria</a></li>
+            <li><a href="javascript:void(0)">Yemen</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Tecnologie <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Intelligenza artificiale</a></li>
+        <li><a href="javascript:void(0)">Social</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Cultura <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Cultura</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Alt Arte Lavoro Tempo</a></li>
+            <li><a href="javascript:void(0)">Archeologia</a></li>
+            <li><a href="javascript:void(0)">Architettura</a></li>
+            <li><a href="javascript:void(0)">Giorno della Memoria</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Biennale</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Biennale architettura</a></li>
+            <li><a href="javascript:void(0)">Biennale arte</a></li>
+            <li><a href="javascript:void(0)">Biennale Cinema</a></li>
+            <li><a href="javascript:void(0)">Biennale Danza</a></li>
+            <li><a href="javascript:void(0)">Biennale Musica</a></li>
+            <li><a href="javascript:void(0)">Biennale Teatro</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">Festivaletteratura Mantova</a></li>
+        <li><a href="javascript:void(0)">Più libri, più liberi</a></li>
+        <li><a href="javascript:void(0)">Salone del libro</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Visioni<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Visioni</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Berlinale</a></li>
+            <li><a href="javascript:void(0)">Cannes</a></li>
+            <li><a href="javascript:void(0)">Cinema</a></li>
+            <li><a href="javascript:void(0)">Locarno</a></li>
+            <li><a href="javascript:void(0)">Oscar</a></li>
+            <li><a href="javascript:void(0)">Sanremo</a></li>
+            <li><a href="javascript:void(0)">Venezia Cinema</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Recensioni<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Libri</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">Fantascienza</a></li>
+            <li><a href="javascript:void(0)">Noir</a></li>
+            <li><a href="javascript:void(0)">Poesia</a></li>
+            <li><a href="javascript:void(0)">Dante</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">Film</a></li>
+        <li><a href="javascript:void(0)">Mostre</a></li>
+        <li><a href="javascript:void(0)">Musica</a></li>
+        <li><a href="javascript:void(0)">Serie Tv</a></li>
+        <li><a href="javascript:void(0)">Teatro e danza</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Inchieste <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Inchieste</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Storie<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Storie</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Interviste<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Interviste</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Reportage<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Reportage</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Sport<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Sport</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">in moviment</a></li>
+            <li><a href="javascript:void(0)">Olimpiadi</a></li>
+            <li><a href="javascript:void(0)">Rugby</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Inserti <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Alias</a></li>
+        <li><a href="javascript:void(0)">Alias Domenica</a></li>
+        <li><a href="javascript:void(0)">ExtraTerrestre</a></li>
+        <li><a href="javascript:void(0)">Le Monde diplomatique</a></li>
+        <li><a href="javascript:void(0)">1945-2025</a></li>
+        <li><a href="javascript:void(0)">Pecore elettriche</a></li>
+        <li><a href="javascript:void(0)">Questa è Gaza</a></li>
+        <li><a href="javascript:void(0)">Tremenda vendetta</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Podcast <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">I podcast del mani</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Immagini<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Retina</a></li>
+        <li><a href="javascript:void(0)">Fotoreportage</a></li>
+        <li><a href="javascript:void(0)">Fotofinish</a></li>
+        <li class="has-submenu-level2">
+          <a href="javascript:void(0)">Fumetti</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="javascript:void(0)">hurricane</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Vignette<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Vignette</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Prime Pagine<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Prime Pagine</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">ilmani tv<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Eventi</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" (click)="toggleSubmenu($event)">
+      <a href="javascript:void(0)">Pagine speciali<i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)">Archivio</a></li>
+        <li><a href="javascript:void(0)">Buon compleanno mani!</a></li>
+        <li><a href="javascript:void(0)">MeMa</a></li>
+        <li><a href="javascript:void(0)">Lab</a></li>
+        <li><a href="javascript:void(0)">25 aprile</a></li>
+        <li><a href="javascript:void(0)">Addio</a></li>
+        <li><a href="javascript:void(0)">io rompo</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="sidebar-datetime">
+    <span>{{currentDate}}</span>
+    <span class="text-secondary mx-1">—</span>
+    <span>{{currentUpdate}}</span>
+  </div>
+
+  <div class="sidebar-links">
+    <a href="javascript:void(0)" class="sidebar-link">Abbonamenti</a>
+    <a href="javascript:void(0)" class="sidebar-link">Ultime edizioni</a>
+  </div>
+
+  <div class="sidebar-title">Info utili</div>
+
+  <ul class="sidebar-list">
+    <li><a href="javascript:void(0)">Aiuto</a></li>
+    <li><a href="javascript:void(0)">Newsletter</a></li>
+    <li><a href="javascript:void(0)">Tariffe</a></li>
+    <li><a href="javascript:void(0)">Abbonamenti</a></li>
+    <li><a href="javascript:void(0)">Regala un abbonamento</a></li>
+    <li><a href="javascript:void(0)">La membership</a></li>
+    <li><a href="javascript:void(0)">Cosa puoi fare</a></li>
+    <li><a href="javascript:void(0)">Store</a></li>
+    <li><a href="javascript:void(0)">Termini e condizioni</a></li>
+    <li><a href="javascript:void(0)">Privacy</a></li>
+    <li><a href="javascript:void(0)">Cookie</a></li>
+  </ul>
 </div>
