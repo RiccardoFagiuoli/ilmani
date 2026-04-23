@@ -46,6 +46,7 @@
 
 .hover-underline {
   text-decoration: none;
+  font-weight: bold;
 }
 
 .hover-underline:hover {
