@@ -11,6 +11,7 @@ import {Cards} from './components/layout/cards/cards';
 import {Subscriptionbox} from './components/features/subscriptionbox/subscriptionbox';
 import {Copyright} from './components/core/copyright/copyright';
 import { Ad } from './components/features/ad/ad';
+import { Alias } from './components/layout/alias/alias';
 
 @Component({
   selector: 'app-root',
@@ -27,6 +28,7 @@ import { Ad } from './components/features/ad/ad';
     Subscriptionbox,
     Copyright,
     Ad,
+    Alias,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

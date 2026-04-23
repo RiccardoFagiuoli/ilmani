@@ -1,5 +1,6 @@
 .bold-first{
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Linee tra le colonne */
