@@ -115,11 +115,12 @@ body, button, input, select, textarea {
   --text-dark: #1a1a1a;
   --focus-red: rgb(118 44 51 / 0.5);
 }
+
 /* ============================================ */
 /* UTILITY CLASS PERSONALIZZATE                 */
 /* ============================================ */
 .fs-5-5 {
-  font-size: 1.125rem;  /* 18px */
+  font-size: 1.125rem; /* 18px */
 }
 
 .fs-0-8 {

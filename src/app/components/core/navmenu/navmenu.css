@@ -52,13 +52,16 @@
     height: 4px;
     background: transparent;
   }
+
   .main-nav::-webkit-scrollbar-track {
     background: transparent;
   }
+
   .main-nav::-webkit-scrollbar-thumb {
     background: transparent;
     border-radius: 0;
   }
+
   .main-nav:hover::-webkit-scrollbar-thumb {
     background: rgba(85, 85, 85, 0.3);
   }
@@ -67,6 +70,7 @@
   .main-nav {
     scrollbar-color: transparent transparent;
   }
+
   .main-nav:hover {
     scrollbar-color: rgba(85, 85, 85, 0.3) transparent;
   }

@@ -59,7 +59,7 @@
 /* Responsive */
 @media (max-width: 1020px) {
   .subscription-box {
-    padding: 2rem;  /* ridotto per mobile */
+    padding: 2rem; /* ridotto per mobile */
   }
 
   .btn-subscription-special {

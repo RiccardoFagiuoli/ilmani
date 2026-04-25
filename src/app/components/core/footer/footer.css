@@ -36,7 +36,7 @@ footer a:hover,
 .footer-col a:hover,
 .footer-info a:hover,
 .social-list a:hover,
-.copyright-right a:hover{
+.copyright-right a:hover {
   text-decoration: underline !important;
   text-decoration-color: rgba(85, 85, 85, 0.5) !important;
   text-decoration-thickness: 2px !important;
@@ -80,11 +80,11 @@ footer a:focus-visible,
     margin-left: 0;
   }
 
-  .footer-title{
+  .footer-title {
     font-size: 0.8rem;
   }
 
-  .footer-right a{
+  .footer-right a {
     font-size: 0.8rem;
   }
 
@@ -96,16 +96,18 @@ footer a:focus-visible,
 
   /* WRAPPER della prima colonna (NOTIZIE + INSERTI) */
   .footer-col-notizie-wrapper {
-    grid-row:1;
+    grid-row: 1;
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     gap: 30px !important;
   }
+
   .footer-col-notizie {
     grid-row: 1 !important;
     grid-column: 1 !important;
   }
-  .footer-col-inserti{
+
+  .footer-col-inserti {
     grid-row: 1 !important;
     grid-column: 2 !important;
     margin-top: 0 !important;
@@ -117,22 +119,24 @@ footer a:focus-visible,
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
   }
-  .footer-col-ilmani{
+
+  .footer-col-ilmani {
     grid-row: 1 !important;
     grid-column: 1 !important;
   }
 
-  .footer-col-quotidiano{
+  .footer-col-quotidiano {
     grid-row: 2 !important;
     grid-column: 1 !important;
     margin-top: auto !important;
   }
 
-  .footer-col-social{
+  .footer-col-social {
     grid-row: 1 !important;
     grid-column: 2 !important;
     margin-top: auto !important;
   }
+
   /* TERZA COLONNA (IL COLLETTIVO) - larghezza piena */
   .footer-col-collettivo {
     grid-row: 3 !important;
@@ -141,18 +145,17 @@ footer a:focus-visible,
   }
 
   /* ========== BORDI ========== */
-
   /* BORDO tra RIGA 1 e RIGA 2 */
   .footer-col-notizie-wrapper,
   .footer-col-mani-wrapper {
-    border-top: 1px solid 	var(--gray-light);
+    border-top: 1px solid var(--gray-light);
     padding-top: 30px;
     margin-bottom: 10px;
   }
 
   /* BORDO tra RIGA 2 e RIGA 3 */
   .footer-col-collettivo {
-    border-top: 1px solid 	var(--gray-light);
+    border-top: 1px solid var(--gray-light);
     padding-top: 30px;
   }
 }

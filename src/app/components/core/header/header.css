@@ -97,7 +97,7 @@
 }
 
 .red-line {
-  border-bottom: 6px solid var(--primary-red)/*#c12b2b*/;
+  border-bottom: 6px solid var(--primary-red) /*#c12b2b*/;
 }
 
 @media (max-width: 1020px) {

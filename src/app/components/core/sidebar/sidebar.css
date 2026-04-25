@@ -73,10 +73,11 @@
 .overlay.active {
   display: block;
 }
+
 /* ============================================ */
 /* BOTTONI SIDEBAR                              */
 /* ============================================ */
-.sidebar-buttons{
+.sidebar-buttons {
   display: none;
 }
 
@@ -94,7 +95,7 @@
   position: relative;
 }
 
-.sidebar-logo{
+.sidebar-logo {
   height: 100%;
   width: auto;
   position: absolute;
@@ -179,7 +180,7 @@
   cursor: pointer;
   border-radius: 4px;
   transition: background 0.2s;
-  box-shadow: inset 0 -1px 0 0 var(--gray-light);  /* bordo lungo */
+  box-shadow: inset 0 -1px 0 0 var(--gray-light); /* bordo lungo */
   margin-bottom: 5px;
 }
 
@@ -212,7 +213,7 @@
   background-color: rgba(85, 85, 85, 0.3);
 }
 
-.has-submenu ul{
+.has-submenu ul {
   background-color: rgba(85, 85, 85, 0.06);
   margin: 0;
 }
@@ -244,9 +245,10 @@
   margin-bottom: 8px;
 }
 
-.submenu ul{
+.submenu ul {
   background-color: transparent;
 }
+
 .submenu li a {
   font-size: 1rem;
   font-weight: normal;
@@ -448,6 +450,7 @@
     padding: 10px 20px !important;
     border-bottom: 1px solid var(--gray-light) !important;
   }
+
   .sidebar-menu.active {
     left: 0 !important;
   }
@@ -458,7 +461,7 @@
 
   /* Menu principale */
   .sidebar-nav {
-    padding: 0px;
+    padding: 0;
   }
 
   .has-submenu a {

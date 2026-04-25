@@ -25,6 +25,7 @@
   outline: auto 2px var(--focus-red) !important;
   outline-offset: 0 !important;
 }
+
 /* Nasconde la topbar su mobile */
 @media (max-width: 1020px) {
   .hide-on-mobile {
