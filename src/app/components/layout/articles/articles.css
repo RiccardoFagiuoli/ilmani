@@ -27,24 +27,123 @@
   color: white;
 }
 
-.newsletter-box{
+/* ============================================ */
+/* NEWSLETTER FLEXBOX RESPONSIVE - NUOVE REGOLE */
+/* ============================================ */
+
+/* Container principale newsletter */
+.newsletter-box-responsive {
   background-color: var(--gray-lighter);
-  border-radius: 1px;
   border: 1px solid var(--gray-light);
+  border-radius: 1px;
+  padding: clamp(1rem, 4vw, 2rem); /* padding fluido */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.newsletter-text{
+/* Header con i due testi */
+.newsletter-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Stile per il testo NEWSLETTER */
+.newsletter-header .newsletter-text {
   color: var(--primary-red-hover);
   background-color: rgb(189 1 1 / 0.1);
   border-radius: 2px;
   display: inline-block;
   padding: 2px 6px;
-  font-size: 0.8rem;
+  font-size: clamp(0.7rem, 3vw, 0.8rem);
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
-  text-decoration: none;
+}
+
+/* Stile per il secondo testo */
+.newsletter-header .fw-bold {
+  font-size: clamp(0.8rem, 3.5vw, 0.9rem);
+}
+
+/* Wrapper per centrare l'immagine */
+.newsletter-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Container immagine con proporzioni mantenute */
+.newsletter-img-container {
+  position: relative;
+  width: 100%;
+  max-width: min(380px, 70vw); /* larghezza massima responsiva */
+  aspect-ratio: 1 / 1;
+}
+
+/* Immagine circolare */
+.newsletter-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Icona penna overlay */
+.pen-icon-overlay {
+  position: absolute;
+  bottom: 55%;
+  left: 85%;
+  width: 20%;
+  height: 20%;
+  background-color: var(--primary-red);
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pen-icon-overlay i {
+  color: white;
+  font-size: clamp(0.2rem, 5vw, 1.6rem);
+}
+
+/* Titolo nella newsletter */
+.newsletter-box-responsive .article-subtitle {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin-bottom: 1rem;
+}
+
+/* Testo descrittivo */
+.newsletter-box-responsive .article-excerpt {
+  font-size: clamp(0.8rem, 3vw, 0.9rem);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* Bottone newsletter */
+.newsletter-box-responsive .btn-newsletter {
+  align-self: flex-start;
+  background-color: transparent;
+  border: 1px solid var(--primary-red);
+  color: var(--primary-red);
+  padding: 8px 24px;
+  font-size: clamp(0.85rem, 3vw, 1rem);
+  font-weight: bold;
+  border-radius: 2px;
+  transition: all 0.3s;
   cursor: pointer;
+}
+
+.newsletter-box-responsive .btn-newsletter:hover {
+  background-color: var(--primary-red);
+  color: white;
 }
 
 .bold-first{
@@ -172,7 +271,7 @@ h5 a:hover {
 
 
 /* ============================================ */
-/* ACCESSIBILITA' - FOCUS VISIBILE              */
+/* FOCUS VISIBILE                               */
 /* ============================================ */
 
 .article-category:focus-visible,
@@ -226,5 +325,30 @@ img:focus-visible {
   .deep-article-card img {
     width: 100% !important;
     height: auto !important;
+  }
+
+  .newsletter-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .newsletter-img-container {
+    max-width: 400px;
+  }
+
+  .pen-icon-overlay i {
+    font-size: 2rem;
+  }
+
+  .newsletter-box-responsive .btn-newsletter {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1020px) {
+  .pen-icon-overlay i {
+    color: white;
+    font-size: clamp(0.7rem, 3vw, 1rem);
   }
 }
