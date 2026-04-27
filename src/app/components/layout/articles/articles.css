@@ -28,7 +28,7 @@
 }
 
 /* ============================================ */
-/* NEWSLETTER FLEXBOX RESPONSIVE - NUOVE REGOLE */
+/* NEWSLETTER FLEXBOX RESPONSIVE                */
 /* ============================================ */
 
 /* Container principale newsletter */
@@ -54,7 +54,7 @@
 }
 
 /* Stile per il testo NEWSLETTER */
-.newsletter-header .newsletter-text {
+.newsletter-text {
   color: var(--primary-red-hover);
   background-color: rgb(189 1 1 / 0.1);
   border-radius: 2px;
@@ -290,6 +290,19 @@ img:focus-visible {
   outline-offset: 2px;
 }
 
+@media (min-width: 769px) and (max-width: 1020px) {
+  .deep-article-card img[src*="140x100"] { /*immagine piccola newsletter*/
+    max-width: 25% !important;
+    height: auto !important;
+    align-self: flex-start;
+  }
+  .deep-article-card img[src*="320x220"] { /*immagine grande newsletter*/
+    max-width: 45% !important;
+    height: auto !important;
+    align-self: flex-start;
+  }
+}
+
 @media (max-width: 768px) {
   .row-with-lines > [class*="col-"]:not(:last-child)::after {
     content: '';
@@ -328,7 +341,7 @@ img:focus-visible {
   }
 
   .newsletter-header {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
   }
 
