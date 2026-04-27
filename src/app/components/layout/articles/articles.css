@@ -292,12 +292,12 @@ img:focus-visible {
 
 @media (min-width: 769px) and (max-width: 1020px) {
   .deep-article-card img[src*="140x100"] { /*immagine piccola newsletter*/
-    max-width: 25% !important;
+    max-width: 84px !important;
     height: auto !important;
     align-self: flex-start;
   }
   .deep-article-card img[src*="320x220"] { /*immagine grande newsletter*/
-    max-width: 45% !important;
+    max-width: 192px !important;
     height: auto !important;
     align-self: flex-start;
   }
