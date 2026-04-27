@@ -290,10 +290,6 @@ img:focus-visible {
   outline-offset: 2px;
 }
 
-@media (min-width: 769px) and (max-width: 1020px) {
-
-}
-
 @media (max-width: 768px) {
   .row-with-lines > [class*="col-"]:not(:last-child)::after {
     content: '';
