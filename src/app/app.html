@@ -1,4 +1,6 @@
-<app-sidebar></app-sidebar>
+<aside class="sidebar">
+  <app-sidebar></app-sidebar>
+</aside>
 <header class="sticky-header">
   <h1 class="visually-hidden">Il Mani</h1>
   <app-topbar></app-topbar>
@@ -8,12 +10,29 @@
 </header>
 
 <main class="container main-content">
-  <app-hero></app-hero>
-  <app-ad></app-ad>
-  <app-articles></app-articles>
-  <app-cards></app-cards>
-  <app-alias></app-alias>
-  <app-subscriptionbox></app-subscriptionbox>
+  <section aria-label="Introduzione">
+    <app-hero></app-hero>
+  </section>
+
+  <aside aria-label="Pubblicità">
+    <app-ad></app-ad>
+  </aside>
+
+  <section id="notizie-principali">
+    <app-articles></app-articles>
+  </section>
+
+  <section id="approfondimenti">
+    <app-cards></app-cards>
+  </section>
+
+  <section id="alias">
+    <app-alias></app-alias>
+  </section>
+
+  <section id="iscrizione">
+    <app-subscriptionbox></app-subscriptionbox>
+  </section>
 </main>
 <footer>
   <app-footer></app-footer>
