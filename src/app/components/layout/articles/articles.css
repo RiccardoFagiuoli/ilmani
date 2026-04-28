@@ -156,7 +156,6 @@
   position: relative;
 }
 
-/* Ogni colonna deve essere position relative */
 .row-with-lines > [class*="col-"] {
   position: relative;
 }

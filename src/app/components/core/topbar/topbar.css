@@ -20,7 +20,7 @@
   text-decoration-thickness: 2px;
 }
 
-/* Focus visibile per accessibilità */
+/* Focus visibile */
 *:focus-visible {
   outline: auto 2px var(--focus-red) !important;
   outline-offset: 0 !important;

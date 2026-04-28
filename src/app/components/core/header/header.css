@@ -43,7 +43,7 @@
   text-decoration-thickness: 2px;
 }
 
-/* Focus visibile per accessibilità tastiera */
+/* Focus visibile */
 .hamburger-btn:focus-visible,
 .btn-abbonati-top:focus-visible,
 .btn-newsletter:focus-visible {
@@ -52,7 +52,14 @@
   border-radius: 2px;
 }
 
-/* Logo - nessuna sottolineatura */
+.btn-abbonati-top:focus-visible,
+.btn-entra-top:focus-visible {
+  outline: 4px solid var(--focus-red) !important;
+  outline-offset: 0  !important;
+  color: white;
+  background-color: var(--primary-red) !important;
+}
+
 .logo-img {
   max-width: 100%;
   height: auto;

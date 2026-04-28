@@ -35,31 +35,24 @@
 /* ACCESSIBILITA'                               */
 /* ============================================ */
 
-/* Focus visibile per tastiera - bottone */
+/* Focus visibile bottone */
 .btn-subscription-special:focus-visible {
   outline: 2px solid #ffffff;
   outline-offset: 3px;
   border-radius: 5px;
 }
 
-/* Focus visibile per tastiera - link */
+/* Focus visibile link */
 .subscription-link:focus-visible {
   outline: 2px solid #ffffff;
   outline-offset: 3px;
   border-radius: 2px;
 }
 
-/* Migliora contrasto testo su sfondo rosso */
-.subscription-box h3,
-.subscription-box p,
-.subscription-link {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
 
-/* Responsive */
 @media (max-width: 1020px) {
   .subscription-box {
-    padding: 2rem; /* ridotto per mobile */
+    padding: 2rem;
   }
 
   .btn-subscription-special {

@@ -12,14 +12,13 @@
   border-radius: 2px;
 }
 
-/* Rimuove outline fastidioso su focus mouse (mantiene solo tastiera) */
+/* Rimuove outline su focus mouse */
 .close-sidebar:focus:not(:focus-visible),
 .btn-abbonati-sidebar:focus:not(:focus-visible),
 .btn-entra-sidebar:focus:not(:focus-visible) {
   outline: none;
 }
 
-/* Indica che gli elementi sono interattivi */
 .has-submenu a,
 .close-sidebar,
 .sidebar-link,
@@ -27,12 +26,10 @@
   cursor: pointer;
 }
 
-/* Contrasto per placeholder input */
 .search-input::placeholder {
   color: var(--gray-medium);
 }
 
-/* Assicura che l'overlay sia accessibile */
 .overlay.active {
   display: block;
 }
@@ -262,7 +259,7 @@
 }
 
 /* ============================================ */
-/* SOTTOMENU DI SECONDO LIVELLO - SEMPRE VISIBILE */
+/* SOTTOMENU DI SECONDO LIVELLO                 */
 /* ============================================ */
 
 .has-submenu-level2 {

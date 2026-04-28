@@ -35,8 +35,7 @@ footer a.text-secondary {
 footer a:hover,
 .footer-col a:hover,
 .footer-info a:hover,
-.social-list a:hover,
-.copyright-right a:hover {
+.social-list a:hover {
   text-decoration: underline !important;
   text-decoration-color: rgba(85, 85, 85, 0.5) !important;
   text-decoration-thickness: 2px !important;
@@ -66,8 +65,7 @@ footer .btn-outline-danger:hover {
 footer a:focus-visible,
 .footer-col a:focus-visible,
 .footer-info a:focus-visible,
-.social-list a:focus-visible,
-.copyright-right a:focus-visible {
+.social-list a:focus-visible {
   outline: 2px solid var(--focus-red);
   outline-offset: 2px;
   border-radius: 2px;

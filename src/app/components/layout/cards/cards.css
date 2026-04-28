@@ -40,12 +40,8 @@
   letter-spacing: 1px;
 }
 
-.hide {
-  display: none;
-}
-
 /* ============================================ */
-/* ACCESSIBILITA' - FOCUS VISIBILE              */
+/* FOCUS VISIBILE                               */
 /* ============================================ */
 
 .cards-section:focus-visible,

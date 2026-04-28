@@ -25,17 +25,13 @@
 }
 
 /* ============================================ */
-/* ACCESSIBILITA' - FOCUS VISIBILE              */
+/* FOCUS VISIBILE                               */
 /* ============================================ */
 
 *:focus-visible {
   outline: auto 2px var(--focus-red) !important;
   outline-offset: 0 !important;
 }
-
-/* ============================================ */
-/* RESPONSIVE                                   */
-/* ============================================ */
 
 @media (max-width: 1020px) {
   .main-nav {

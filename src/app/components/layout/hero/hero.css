@@ -173,7 +173,7 @@
   border-radius: 2px;
 }
 
-/* Immagini: nessun outline fastidioso */
+/* Immagini: nessun outline  */
 .cover-image img:focus-visible,
 .main-article-image img:focus-visible,
 .side-image img:focus-visible {

@@ -3,12 +3,11 @@
   position: relative;
 }
 
-/* Ogni colonna deve essere position relative */
 .row-with-lines > [class*="col-"] {
   position: relative;
 }
 
-/* Linea VERTICALE tra le colonne (solo desktop) */
+/* Linea VERTICALE tra le colonne */
 .row-with-lines > [class*="col-"]:not(:last-child)::after {
   content: '';
   position: absolute;

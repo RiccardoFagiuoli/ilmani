@@ -31,7 +31,7 @@
   border-radius: 2px;
 }
 
-/* Focus visibile per l'immagine (se focus arriva su di essa) */
+/* Focus visibile immagine */
 .ad img:focus-visible {
   outline: 2px solid var(--focus-red);
   outline-offset: 2px;
