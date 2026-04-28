@@ -52,28 +52,6 @@
   font-size: 14px;
 }
 
-.sfoglia-btn {
-  display: inline-block;
-  border: 1px solid var(--primary-red);
-  background: transparent;
-  padding: 8px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--primary-red);
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.sfoglia-btn:hover {
-  background-color: var(--primary-red);
-  color: white;
-}
-
 .main-article {
   display: flex;
   gap: 20px;
@@ -165,7 +143,6 @@
 }
 
 .edition-header:focus-visible,
-.sfoglia-btn:focus-visible,
 .category:focus-visible,
 .title:focus-visible {
   outline: 2px solid var(--focus-red);

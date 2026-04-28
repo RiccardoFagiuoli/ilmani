@@ -1,6 +1,4 @@
 .close-sidebar:focus-visible,
-.btn-abbonati-sidebar:focus-visible,
-.btn-entra-sidebar:focus-visible,
 .sidebar-link:focus-visible,
 .search-input:focus-visible,
 .has-submenu a:focus-visible,
@@ -13,9 +11,7 @@
 }
 
 /* Rimuove outline su focus mouse */
-.close-sidebar:focus:not(:focus-visible),
-.btn-abbonati-sidebar:focus:not(:focus-visible),
-.btn-entra-sidebar:focus:not(:focus-visible) {
+.close-sidebar:focus:not(:focus-visible) {
   outline: none;
 }
 
@@ -396,37 +392,12 @@
     border-bottom: 1px solid var(--gray-light);
   }
 
-  .btn-abbonati-sidebar {
-    background-color: var(--primary-red);
-    color: white;
-    border: none;
+  .btn-danger {
     padding: 6px 16px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 2px;
-    transition: background-color 0.3s;
-    cursor: pointer;
   }
 
-  .btn-abbonati-sidebar:hover {
-    background-color: var(--primary-red-hover);
-  }
-
-  .btn-entra-sidebar {
-    background-color: transparent;
-    border: 1px solid var(--primary-red);
-    color: var(--primary-red);
+  .btn-outline-danger{
     padding: 6px 16px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 2px;
-    transition: all 0.3s;
-    cursor: pointer;
-  }
-
-  .btn-entra-sidebar:hover {
-    background-color: var(--primary-red);
-    color: white;
   }
 
   /* Data e ora */

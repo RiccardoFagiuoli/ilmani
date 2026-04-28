@@ -75,21 +75,53 @@ body, button, input, select, textarea {
 }
 
 /* ============================================ */
-/* TIPOGRAFIA GENERALE                          */
+/* BUTTON                                       */
 /* ============================================ */
-.article-category,
-.card-category {
-  color: var(--primary-red);
-  font-size: 0.7rem;
-  text-transform: uppercase;
+footer .btn-outline-danger {
+  color: var(--primary-red) !important;
+  border-color: var(--primary-red) !important;
 }
 
+footer .btn-outline-danger:hover {
+  background-color: var(--primary-red) !important;
+  color: white !important;
+}
+
+/* ============================================ */
+/* TIPOGRAFIA GENERALE                          */
+/* ============================================ */
+/*categoria in rosso piccola*/
+.article-category {
+  color: var(--primary-red);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.article-category:hover {
+  color: var(--primary-red-hover);
+  cursor: pointer;
+}
+
+/* box titolo sezione grigio a testo rosso*/
 .section-title {
-  font-size: 1.3rem;
+  color: var(--primary-red);
+  background-color: rgba(85, 85, 85, 0.08);
+  display: inline-block;
+  padding: 2px 10px;
+  text-transform: uppercase;
   font-weight: bold;
-  border-left: 4px solid var(--primary-red);
-  padding-left: 12px;
-  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section-title:hover {
+  color: var(--primary-red-hover);
 }
 
 /* ============================================ */

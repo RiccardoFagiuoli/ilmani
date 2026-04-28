@@ -52,16 +52,6 @@ footer .btn-danger:hover {
   border-color: var(--primary-red-hover) !important;
 }
 
-footer .btn-outline-danger {
-  color: var(--primary-red) !important;
-  border-color: var(--primary-red) !important;
-}
-
-footer .btn-outline-danger:hover {
-  background-color: var(--primary-red) !important;
-  color: white !important;
-}
-
 footer a:focus-visible,
 .footer-col a:focus-visible,
 .footer-info a:focus-visible,

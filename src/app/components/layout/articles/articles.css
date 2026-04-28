@@ -1,30 +1,5 @@
-.article-section {
-  color: var(--primary-red);
-  background-color: rgba(85, 85, 85, 0.08);
-  display: inline-block;
-  padding: 2px 10px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.btn-newsletter {
-  background-color: transparent;
-  border: 1px solid var(--primary-red);
-  color: var(--primary-red);
+.btn-outline-danger {
   padding: 4px 20px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 2px;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-.btn-newsletter:hover {
-  background-color: var(--primary-red);
-  color: white;
 }
 
 /* ============================================ */
@@ -127,25 +102,6 @@
   flex-grow: 1;
 }
 
-/* Bottone newsletter */
-.newsletter-box-responsive .btn-newsletter {
-  align-self: flex-start;
-  background-color: transparent;
-  border: 1px solid var(--primary-red);
-  color: var(--primary-red);
-  padding: 8px 24px;
-  font-size: clamp(0.85rem, 3vw, 1rem);
-  font-weight: bold;
-  border-radius: 2px;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-.newsletter-box-responsive .btn-newsletter:hover {
-  background-color: var(--primary-red);
-  color: white;
-}
-
 .bold-first {
   font-weight: bold;
   text-transform: uppercase;
@@ -169,25 +125,6 @@
   width: 1px;
   height: 100%;
   background-color: var(--gray-light);
-}
-
-/* Categorie articoli */
-.article-category {
-  color: var(--primary-red);
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: color 0.2s ease;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hover categorie*/
-.article-category:hover {
-  color: var(--primary-red-hover);
-  cursor: pointer;
 }
 
 /* Titoli articoli */
@@ -317,6 +254,10 @@ img:focus-visible {
     font-size: 1.2rem;
   }
 
+  .article-meta {
+    font-size: 1rem;
+  }
+
   .deep-article-card {
     flex-direction: column;
   }
@@ -337,11 +278,6 @@ img:focus-visible {
 
   .pen-icon-overlay i {
     font-size: 2rem;
-  }
-
-  .newsletter-box-responsive .btn-newsletter {
-    width: 100%;
-    max-width: 250px;
   }
 }
 

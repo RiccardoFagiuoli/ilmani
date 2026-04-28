@@ -44,20 +44,10 @@
 }
 
 /* Focus visibile */
-.hamburger-btn:focus-visible,
-.btn-abbonati-top:focus-visible,
-.btn-newsletter:focus-visible {
+.hamburger-btn:focus-visible {
   outline: 2px solid var(--focus-red);
   outline-offset: 2px;
   border-radius: 2px;
-}
-
-.btn-abbonati-top:focus-visible,
-.btn-entra-top:focus-visible {
-  outline: 4px solid var(--focus-red) !important;
-  outline-offset: 0  !important;
-  color: white;
-  background-color: var(--primary-red) !important;
 }
 
 .logo-img {
@@ -70,37 +60,12 @@
 }
 
 /* Bottoni header */
-.btn-abbonati-top {
-  background-color: var(--primary-red);
-  color: white;
-  border: none;
+.btn-danger {
   padding: 8px 20px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 2px;
-  transition: background-color 0.3s;
-  cursor: pointer;
 }
 
-.btn-abbonati-top:hover {
-  background-color: var(--primary-red-hover);
-}
-
-.btn-entra-top {
-  background-color: transparent;
-  border: 1px solid var(--primary-red);
-  color: var(--primary-red);
+.btn-outline-danger {
   padding: 8px 20px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 2px;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-.btn-entra-top:hover {
-  background-color: var(--primary-red);
-  color: white;
 }
 
 .red-line {

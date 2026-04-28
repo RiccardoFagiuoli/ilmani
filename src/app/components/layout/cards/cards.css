@@ -6,22 +6,6 @@
   border-radius: 0 !important;
 }
 
-.cards-section {
-  background-color: rgba(85, 85, 85, 0.08);
-  color: var(--primary-red);
-  display: inline-block;
-  padding: 2px 10px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.cards-section:hover {
-  color: var(--primary-red-hover);
-}
-
 .card-title {
   text-decoration: none;
   color: black;
@@ -44,9 +28,8 @@
 /* FOCUS VISIBILE                               */
 /* ============================================ */
 
-.cards-section:focus-visible,
-.card-title:focus-visible,
-.card-category:focus-visible {
+.section-title:focus-visible,
+.card-title:focus-visible{
   outline: 2px solid var(--focus-red);
   outline-offset: 2px;
   border-radius: 2px;
