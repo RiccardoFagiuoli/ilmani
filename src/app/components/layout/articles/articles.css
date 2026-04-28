@@ -320,7 +320,6 @@ img:focus-visible {
 
   .deep-article-card {
     flex-direction: column;
-    align-items: flex-start; /*allinea a sinistra su mobile ma cambia dimensioni TODO: risolvi dimensioni immagini incolonnate*/
   }
 
   .deep-article-card img {
