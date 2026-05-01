@@ -33,7 +33,7 @@
   outline-offset: 0 !important;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1022px) {
   .main-nav {
     overflow-x: auto;
     overflow-y: hidden;
@@ -43,7 +43,7 @@
     display: block;
   }
 
-  /* Scrollbar - Webkit (Chrome, Safari, Edge) */
+  /* Scrollbar - Webkit*/
   .main-nav::-webkit-scrollbar {
     height: 4px;
     background: transparent;

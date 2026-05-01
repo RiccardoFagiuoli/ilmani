@@ -28,10 +28,6 @@
   font-size: 0.85rem;
 }
 
-.w-95 {
-  width: 95%;
-}
-
 .rounded-0-1 {
   border-radius: 0.1rem;
 }
@@ -51,11 +47,13 @@ html, body {
 
 .container {
   width: 100%;
+  max-width: 1275px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   overflow-x: hidden;
+  transition: width 100ms ease-in-out;
 }
 
 body {
@@ -142,17 +140,38 @@ footer .btn-outline-danger:hover {
 /* ============================================ */
 /* RESPONSIVE                                   */
 /* ============================================ */
-
-@media (max-width: 1020px) {
+@media (max-width: 660px) {
   .container {
-    width: 85%;
+    width: 100%;
     max-width: none;
   }
 }
 
-@media (min-width: 1021px) and (max-width: 2200px) {
+@media (min-width: 661px) and (max-width: 768px) {
   .container {
-    width: 90%;
+    width: 650px;
+    max-width: none;
+  }
+}
+
+
+@media (min-width: 769px ) and (max-width: 1022px) {
+  .container {
+    width: 750px;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1265px) {
+  .container {
+    width: 1000px;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1266px) and (max-width: 1300px) {
+  .container {
+    width: 98%;
     max-width: none;
   }
 }

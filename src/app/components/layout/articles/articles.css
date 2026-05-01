@@ -281,7 +281,7 @@ img:focus-visible {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1020px) {
+@media (min-width: 769px) and (max-width: 1022px) {
   .pen-icon-overlay i {
     color: white;
     font-size: clamp(0.7rem, 3vw, 1rem);
