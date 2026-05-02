@@ -239,6 +239,10 @@ img:focus-visible {
   outline-offset: 2px;
 }
 
+.display-on-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .row-with-lines > [class*="col-"]:not(:last-child)::after {
     content: '';
@@ -307,6 +311,10 @@ img:focus-visible {
 
   .pen-icon-overlay i {
     font-size: 2rem;
+  }
+
+  .display-on-mobile{
+    display: block;
   }
 }
 
