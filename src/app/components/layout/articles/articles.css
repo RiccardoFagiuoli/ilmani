@@ -186,20 +186,28 @@ h5 a:hover {
 .main-article-card,
 .secondary-article-card,
 .small-article-card,
-.deep-article-card {
+.deep-article-card,
+.deep-article-newsletter-card {
   transition: none;
 }
 
 .main-article-card:hover,
 .secondary-article-card:hover,
 .small-article-card:hover,
-.deep-article-card:hover {
+.deep-article-card:hover,
+.deep-article-newsletter-card:hover {
   transform: none;
   background-color: transparent;
 }
 
 /* Deep article card - senza hover background */
 .deep-article-card {
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.deep-article-newsletter-card {
   background-color: transparent;
   padding: 15px;
   border-radius: 8px;
@@ -268,6 +276,18 @@ img:focus-visible {
 
   .deep-article-card {
     flex-direction: column;
+    margin-left: -3%;
+    margin-right: 0;
+    width: 106%;
+  }
+
+  .deep-article-newsletter-card {
+    flex-direction: column;
+  }
+
+  .deep-article-newsletter-card  img{
+    width: 100% !important;
+    height: auto !important;
   }
 
   .deep-article-card img {

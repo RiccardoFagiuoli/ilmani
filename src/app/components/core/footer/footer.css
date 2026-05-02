@@ -41,17 +41,6 @@ footer a:hover,
   text-decoration-thickness: 2px !important;
 }
 
-/* Bottoni footer */
-footer .btn-danger {
-  background-color: var(--primary-red) !important;
-  border-color: var(--primary-red) !important;
-}
-
-footer .btn-danger:hover {
-  background-color: var(--primary-red-hover) !important;
-  border-color: var(--primary-red-hover) !important;
-}
-
 footer a:focus-visible,
 .footer-col a:focus-visible,
 .footer-info a:focus-visible,
